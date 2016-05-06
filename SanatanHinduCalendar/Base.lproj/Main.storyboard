@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Home" id="BYZ-38-t0r" customClass="ViewController" customModule="SanatanHinduCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6m-KO-q0i">
+                                <rect key="frame" x="15" y="247" width="284" height="149"/>
+                                <accessibility key="accessibilityConfiguration" identifier="holyfestivals"/>
+                                <state key="normal" title="holyfestivals" image="holyfestivals"/>
+                                <connections>
+                                    <segue destination="S9m-4Y-i0f" kind="show" id="uFQ-lw-i7N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qa0-dt-LQa">
+                                <rect key="frame" x="301" y="247" width="284" height="149"/>
+                                <accessibility key="accessibilityConfiguration" identifier="glimpseofhindutva"/>
+                                <state key="normal" title="glimpseofhindutva" image="glimpseofhindutva"/>
+                                <connections>
+                                    <segue destination="7mb-29-CMY" kind="show" id="TrN-M4-KNz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKf-TT-6TN">
+                                <rect key="frame" x="306" y="421" width="279" height="149"/>
+                                <accessibility key="accessibilityConfiguration" identifier="muhurt"/>
+                                <state key="normal" title="muhurt" image="muhurt"/>
+                                <connections>
+                                    <segue destination="7mb-29-CMY" kind="show" id="Cpi-Vh-pDm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztn-fQ-Hnj">
+                                <rect key="frame" x="15" y="425" width="289" height="145"/>
+                                <accessibility key="accessibilityConfiguration" identifier="sadhana"/>
+                                <state key="normal" title="sadhana" image="sadhana"/>
+                                <connections>
+                                    <segue destination="1o7-56-kZD" kind="show" id="FKe-1R-12B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gsw-3H-lHv">
+                                <rect key="frame" x="100" y="93" width="400" height="149"/>
+                                <accessibility key="accessibilityConfiguration" identifier="calendar"/>
+                                <state key="normal" title="calendar" image="calendar"/>
+                                <connections>
+                                    <segue destination="7mb-29-CMY" kind="show" id="PV7-dU-wJM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" text="Sanatan Almanac 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIt-ho-wip">
+                                <rect key="frame" x="80" y="30" width="217" height="13"/>
+                                <accessibility key="accessibilityConfiguration" identifier="sanatanalmanac2016"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                <color key="textColor" red="0.10980392156862745" green="0.20392156862745098" blue="0.51764705882352946" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88866503917530493" green="0.95551525790838776" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.70749525787665712" green="0.82436370731014808" blue="1" alpha="0.93201462765957444" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ztn-fQ-Hnj" firstAttribute="top" secondItem="h6m-KO-q0i" secondAttribute="bottom" constant="35" id="1zy-AE-C9J">
+                                <variation key="widthClass=compact" constant="40"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="oKf-TT-6TN" secondAttribute="trailing" constant="-5" id="6g8-LJ-3V8"/>
+                            <constraint firstItem="mIt-ho-wip" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="9ni-7t-1BC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qa0-dt-LQa" secondAttribute="trailing" constant="-5" id="Bcd-hi-HWx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mIt-ho-wip" secondAttribute="trailing" constant="50" id="E6x-WI-sN9"/>
+                            <constraint firstItem="ztn-fQ-Hnj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-5" id="EHT-wq-XLe"/>
+                            <constraint firstItem="Qa0-dt-LQa" firstAttribute="leading" secondItem="h6m-KO-q0i" secondAttribute="trailing" constant="2" id="Gyh-2n-IR1"/>
+                            <constraint firstItem="mIt-ho-wip" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="80" id="HQ3-pg-xPW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ztn-fQ-Hnj" secondAttribute="bottom" constant="30" id="MxQ-wt-DcE"/>
+                            <constraint firstItem="mIt-ho-wip" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="NhS-Aq-GyG">
+                                <variation key="widthClass=compact" constant="65"/>
+                            </constraint>
+                            <constraint firstItem="oKf-TT-6TN" firstAttribute="top" secondItem="Qa0-dt-LQa" secondAttribute="bottom" constant="25" id="SA5-vC-tjD">
+                                <variation key="widthClass=compact" constant="40"/>
+                            </constraint>
+                            <constraint firstItem="mIt-ho-wip" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VJ0-Z0-evG"/>
+                            <constraint firstItem="h6m-KO-q0i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-5" id="bWu-IH-NMj"/>
+                            <constraint firstItem="Gsw-3H-lHv" firstAttribute="top" secondItem="mIt-ho-wip" secondAttribute="bottom" constant="10" id="cmV-EY-YNf">
+                                <variation key="widthClass=compact" constant="5"/>
+                            </constraint>
+                            <constraint firstItem="Qa0-dt-LQa" firstAttribute="top" secondItem="Gsw-3H-lHv" secondAttribute="bottom" constant="5" id="dOg-4z-b1W">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="h6m-KO-q0i" firstAttribute="top" secondItem="Gsw-3H-lHv" secondAttribute="bottom" constant="5" id="gue-ec-jCL">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="ztn-fQ-Hnj" firstAttribute="width" secondItem="oKf-TT-6TN" secondAttribute="width" constant="10" id="ksV-xb-w18"/>
+                            <constraint firstItem="Gsw-3H-lHv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="r2A-8p-sgB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oKf-TT-6TN" secondAttribute="bottom" constant="30" id="uaG-qP-Em2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gsw-3H-lHv" secondAttribute="trailing" constant="80" id="w7t-jY-dIx"/>
+                            <constraint firstItem="h6m-KO-q0i" firstAttribute="width" secondItem="Qa0-dt-LQa" secondAttribute="width" id="xP5-ki-lho"/>
+                            <constraint firstItem="oKf-TT-6TN" firstAttribute="leading" secondItem="ztn-fQ-Hnj" secondAttribute="trailing" constant="2" id="ylw-pb-2Rf"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="E6x-WI-sN9"/>
+                                <exclude reference="HQ3-pg-xPW"/>
+                                <exclude reference="VJ0-Z0-evG"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1743" y="-2137"/>
+        </scene>
+        <!--Coming Soon-->
+        <scene sceneID="FX1-XF-ao4">
+            <objects>
+                <viewController title="Coming Soon" id="7mb-29-CMY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="knL-ca-wS0"/>
+                        <viewControllerLayoutGuide type="bottom" id="rfh-q5-aWI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QSA-pJ-QWv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming Soon ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FtZ-oB-2DN">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <color key="textColor" red="0.086274509803921567" green="0.13725490196078433" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vg0-Y2-pOs">
+                                <rect key="frame" x="20" y="570" width="560" height="30"/>
+                                <color key="backgroundColor" red="0.76312921869999994" green="0.87515274570000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="home_comingsoon"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.08235294118" green="0.13725490200000001" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Boh-iU-EOI"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckb-LE-F9f">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.086274509803921567" green="0.13725490196078433" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Sanatan Almanac 2016" id="TfA-g0-sie"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86274509803921573" green="0.94509803921568625" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ckb-LE-F9f" firstAttribute="leading" secondItem="QSA-pJ-QWv" secondAttribute="leadingMargin" constant="-19" id="API-cW-trV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FtZ-oB-2DN" secondAttribute="trailing" constant="20" id="Guh-AB-eR5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ckb-LE-F9f" secondAttribute="trailing" constant="-21" id="P3b-uJ-Rn3"/>
+                            <constraint firstItem="FtZ-oB-2DN" firstAttribute="top" secondItem="ckb-LE-F9f" secondAttribute="bottom" constant="225" id="SwL-Cr-emq"/>
+                            <constraint firstItem="ckb-LE-F9f" firstAttribute="top" secondItem="knL-ca-wS0" secondAttribute="bottom" id="YA3-KP-clQ"/>
+                            <constraint firstItem="rfh-q5-aWI" firstAttribute="top" secondItem="vg0-Y2-pOs" secondAttribute="bottom" id="dJM-BS-pqD"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="vg0-Y2-pOs" secondAttribute="leading" id="jAW-t4-kKa"/>
+                            <constraint firstItem="FtZ-oB-2DN" firstAttribute="leading" secondItem="QSA-pJ-QWv" secondAttribute="leadingMargin" constant="100" id="r2L-Vb-38e"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vg0-Y2-pOs" secondAttribute="trailing" id="tZe-EQ-Sq4"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="FtZ-oB-2DN"/>
+                                <exclude reference="vg0-Y2-pOs"/>
+                                <exclude reference="ckb-LE-F9f"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="dJM-BS-pqD"/>
+                                <exclude reference="Guh-AB-eR5"/>
+                                <exclude reference="SwL-Cr-emq"/>
+                                <exclude reference="r2L-Vb-38e"/>
+                                <exclude reference="API-cW-trV"/>
+                                <exclude reference="P3b-uJ-Rn3"/>
+                                <exclude reference="YA3-KP-clQ"/>
+                                <exclude reference="jAW-t4-kKa"/>
+                                <exclude reference="tZe-EQ-Sq4"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="FtZ-oB-2DN"/>
+                                <include reference="vg0-Y2-pOs"/>
+                                <include reference="ckb-LE-F9f"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="dJM-BS-pqD"/>
+                                <include reference="Guh-AB-eR5"/>
+                                <include reference="SwL-Cr-emq"/>
+                                <include reference="r2L-Vb-38e"/>
+                                <include reference="API-cW-trV"/>
+                                <include reference="P3b-uJ-Rn3"/>
+                                <include reference="YA3-KP-clQ"/>
+                                <include reference="jAW-t4-kKa"/>
+                                <include reference="tZe-EQ-Sq4"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qzx-k2-81e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.5" y="-2137"/>
+        </scene>
+        <!--Sadhana-->
+        <scene sceneID="thE-cj-r7o">
+            <objects>
+                <viewController title="Sadhana" id="1o7-56-kZD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vWh-rS-9RC"/>
+                        <viewControllerLayoutGuide type="bottom" id="K41-VB-D2Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vpx-nZ-Gr2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ohp-J5-Gff">
+                                <rect key="frame" x="20" y="570" width="560" height="30"/>
+                                <color key="backgroundColor" red="0.76312921869999994" green="0.87515274570000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="home_sadhana"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.08235294118" green="0.13725490200000001" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Ero-ld-gFx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ap6-ut-u1j">
+                                <rect key="frame" x="0.0" y="344" width="600" height="225"/>
+                                <accessibility key="accessibilityConfiguration" identifier="purposeoflife"/>
+                                <state key="normal" image="whyareweborn-cropped"/>
+                                <connections>
+                                    <segue destination="7mb-29-CMY" kind="show" id="vvy-s3-hyS"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="67Z-UQ-1kR">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.08235294118" green="0.13725490200000001" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Sadhana - Spiritual Practice" id="eGN-68-6te"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOR-BZ-Tjy">
+                                <rect key="frame" x="0.0" y="74" width="600" height="260"/>
+                                <accessibility key="accessibilityConfiguration" identifier="howtobehappy"/>
+                                <state key="normal" image="howtobehappy-cropped"/>
+                                <connections>
+                                    <segue destination="HHI-hM-m7y" kind="show" id="wU0-ZZ-hNZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86274509803921573" green="0.94901960784313721" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="67Z-UQ-1kR" secondAttribute="trailing" constant="-20" id="3rR-WB-2fl"/>
+                            <constraint firstItem="K41-VB-D2Y" firstAttribute="top" secondItem="Ohp-J5-Gff" secondAttribute="bottom" id="7U9-6B-BsN"/>
+                            <constraint firstItem="ap6-ut-u1j" firstAttribute="top" secondItem="YOR-BZ-Tjy" secondAttribute="bottom" constant="10" id="E23-gg-aJ3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ohp-J5-Gff" secondAttribute="trailing" id="Ie8-d9-w7Y"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Ohp-J5-Gff" secondAttribute="leading" id="We2-Nz-7ug"/>
+                            <constraint firstItem="ap6-ut-u1j" firstAttribute="leading" secondItem="vpx-nZ-Gr2" secondAttribute="leadingMargin" constant="-20" id="fIZ-UN-TDc"/>
+                            <constraint firstItem="67Z-UQ-1kR" firstAttribute="leading" secondItem="vpx-nZ-Gr2" secondAttribute="leadingMargin" constant="-20" id="gDx-oI-X8m"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YOR-BZ-Tjy" secondAttribute="trailing" constant="-20" id="jwP-OA-aQf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ap6-ut-u1j" secondAttribute="trailing" constant="-20" id="kOd-ie-BMK"/>
+                            <constraint firstItem="67Z-UQ-1kR" firstAttribute="top" secondItem="vWh-rS-9RC" secondAttribute="bottom" id="mjP-Eo-XT4"/>
+                            <constraint firstItem="YOR-BZ-Tjy" firstAttribute="leading" secondItem="vpx-nZ-Gr2" secondAttribute="leadingMargin" constant="-20" id="vg8-Nw-ag0"/>
+                            <constraint firstItem="YOR-BZ-Tjy" firstAttribute="top" secondItem="67Z-UQ-1kR" secondAttribute="bottom" constant="10" id="y7s-0o-e8N"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Festivals" id="Coy-nM-tV5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fgk-hQ-Uwn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-960" y="-992"/>
+        </scene>
+        <!--How to be happy-->
+        <scene sceneID="jtY-6m-gLV">
+            <objects>
+                <viewController title="How to be happy" id="HHI-hM-m7y" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D6U-xi-3w4"/>
+                        <viewControllerLayoutGuide type="bottom" id="Va1-ch-gvB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2JX-iL-LNa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oar-Gs-eJb">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="WMw-VK-g8B"/>
+                                </constraints>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.10980392160000001" green="0.20392156859999999" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="How to be happy?" id="Rdx-DT-SDZ"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plv-He-W2m">
+                                <rect key="frame" x="20" y="570" width="560" height="30"/>
+                                <color key="backgroundColor" red="0.76312921869999994" green="0.87515274570000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="sadhana_howtobehappy"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Sadhana - Spiritual Practice">
+                                    <color key="titleColor" red="0.08235294118" green="0.13725490200000001" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="1o7-56-kZD" kind="show" id="yjH-eK-2R7"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Sk-mo-9xK">
+                                <rect key="frame" x="20" y="88" width="560" height="444"/>
+                                <color key="backgroundColor" red="0.83137254900000002" green="0.93333333330000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">     Regardless of religion, gender, social or financial status, every one of us wants to be happy and it is this common need that binds us together. All our endeavors are geared towards finding happiness and alleviating pain. Although finding happiness is one of the prime aim of our lives, spiritual research has shown that on an average we are happy only 30% of the time, whilst the rest 40% we are unhappy. The remaining 30% we experience a neutral state devoid of happiness or unhappiness. Unknown to most of us who seek happiness outwardly, true and everlasting happiness lies within us. God Principle of soul (ātmā) is within each one of us. The soul is the God within us and one of the qualities of God, is perpetual Bliss (Ānand). Bliss is the happiness of the highest order and is not dependent on any external stimulus. In the course of our spiritual progress we find that perpetual happiness or Bliss. The quality and quantity as well as the duration of the experience of the Bliss are directly proportional to the stage of our spiritual evolution. By starting spiritual practice and making consistent efforts to increase it; we are able to find Bliss continually.</string>
+                                <color key="textColor" red="0.08235294118" green="0.13725490200000001" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83137254901960789" green="0.93333333333333335" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstItem="plv-He-W2m" firstAttribute="top" secondItem="8Sk-mo-9xK" secondAttribute="bottom" constant="38" id="Ltr-06-52t"/>
+                            <constraint firstItem="oar-Gs-eJb" firstAttribute="leading" secondItem="2JX-iL-LNa" secondAttribute="leadingMargin" constant="-20" id="Nym-Cm-gZA"/>
+                            <constraint firstItem="oar-Gs-eJb" firstAttribute="top" secondItem="D6U-xi-3w4" secondAttribute="bottom" id="Stb-r0-jof"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oar-Gs-eJb" secondAttribute="trailing" constant="-20" id="UjO-hv-S0Y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8Sk-mo-9xK" secondAttribute="trailing" id="Ypd-BB-O0U"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="plv-He-W2m" secondAttribute="trailing" id="ZXz-HL-Trg"/>
+                            <constraint firstItem="8Sk-mo-9xK" firstAttribute="top" secondItem="D6U-xi-3w4" secondAttribute="bottom" constant="68" id="dRd-hk-G8X"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="plv-He-W2m" secondAttribute="leading" id="hyZ-FU-8SZ"/>
+                            <constraint firstItem="Va1-ch-gvB" firstAttribute="top" secondItem="plv-He-W2m" secondAttribute="bottom" id="r7o-id-Qxe"/>
+                            <constraint firstItem="8Sk-mo-9xK" firstAttribute="leading" secondItem="2JX-iL-LNa" secondAttribute="leadingMargin" id="tbu-Lc-bgS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Seg-3P-NzD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.5" y="-992"/>
+        </scene>
+        <!--Festivals-->
+        <scene sceneID="Yda-0t-iL1">
+            <objects>
+                <viewController title="Festivals" id="S9m-4Y-i0f" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ph1-vh-Vhu"/>
+                        <viewControllerLayoutGuide type="bottom" id="BHr-yC-pYB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T5t-XB-J7u">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AXd-U8-Jta">
+                                <rect key="frame" x="0.0" y="20" width="600" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="MAP-7f-iTh"/>
+                                </constraints>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.10980392160000001" green="0.20392156859999999" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Festivals" id="Ohx-NR-ccY"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ramnavami" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMZ-S4-BTo">
+                                <rect key="frame" x="151" y="70" width="95" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="CNb-GS-m3V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.10980392160000001" green="0.20392156859999999" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sri Hanuman Jayanthi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMA-6z-UWI">
+                                <rect key="frame" x="151" y="230" width="202" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="202" id="itq-Bu-5xG"/>
+                                    <constraint firstAttribute="height" constant="21" id="t8u-CG-w2Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.10980392160000001" green="0.20392156859999999" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAM-k0-tM1">
+                                <rect key="frame" x="20" y="70" width="100" height="110"/>
+                                <accessibility key="accessibilityConfiguration" identifier="ramnavami"/>
+                                <state key="normal" image="ramnavmi"/>
+                                <connections>
+                                    <segue destination="4rv-za-alp" kind="show" id="f8p-r8-8iq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Cv-GN-SPO">
+                                <rect key="frame" x="20" y="230" width="105" height="125"/>
+                                <accessibility key="accessibilityConfiguration" identifier="hanumanjayanthi"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="Mbf-ON-94p"/>
+                                    <constraint firstAttribute="height" constant="125" id="TgT-cg-gG7"/>
+                                    <constraint firstAttribute="width" constant="105" id="rKy-24-lVi"/>
+                                </constraints>
+                                <state key="normal" image="srihanumanjayanti"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="rKy-24-lVi"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="7mb-29-CMY" kind="show" id="7LL-5h-qma"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0S-FP-Aap">
+                                <rect key="frame" x="20" y="570" width="560" height="30"/>
+                                <color key="backgroundColor" red="0.76312921865209749" green="0.87515274573799928" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="home_festivals"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.082352941176470587" green="0.13725490196078433" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="gU9-YQ-kL0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmG-wz-DTr">
+                                <rect key="frame" x="151" y="259" width="419" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="267" id="J0T-Y4-erW"/>
+                                    <constraint firstAttribute="height" constant="74" id="XCV-fi-kir"/>
+                                </constraints>
+                                <string key="text">Birthday of Hanumān according to the Hindu lunar almanac,
+Pronunciation 'Hanumān Jayantī'</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.10980392160000001" green="0.20392156859999999" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="J0T-Y4-erW"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Ram Navami is celebrated to proclaim the birth of Lord Sriram, the seventh incarnation of Lord Vishnu." lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgJ-tr-3k6">
+                                <rect key="frame" x="151" y="102" width="419" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="246" id="58i-Ed-hWY"/>
+                                    <constraint firstAttribute="height" constant="85" id="YfU-9o-pYL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.10980392160000001" green="0.20392156859999999" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="58i-Ed-hWY"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86274509803921573" green="0.94901960784313721" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="BHr-yC-pYB" firstAttribute="top" secondItem="H0S-FP-Aap" secondAttribute="bottom" id="47x-sT-etH"/>
+                            <constraint firstAttribute="trailing" secondItem="AXd-U8-Jta" secondAttribute="trailing" id="4cV-eV-JmF"/>
+                            <constraint firstItem="AXd-U8-Jta" firstAttribute="top" secondItem="ph1-vh-Vhu" secondAttribute="bottom" id="Cc7-p9-s0U"/>
+                            <constraint firstItem="WAM-k0-tM1" firstAttribute="top" secondItem="AXd-U8-Jta" secondAttribute="bottom" constant="10" id="CcG-y4-Pi5"/>
+                            <constraint firstItem="TgJ-tr-3k6" firstAttribute="leading" secondItem="dMZ-S4-BTo" secondAttribute="leading" id="Go9-kn-QZv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="H0S-FP-Aap" secondAttribute="trailing" id="K8f-4K-dV9"/>
+                            <constraint firstItem="pmG-wz-DTr" firstAttribute="top" secondItem="RMA-6z-UWI" secondAttribute="bottom" constant="8" symbolic="YES" id="Ofo-pl-ny3"/>
+                            <constraint firstItem="TgJ-tr-3k6" firstAttribute="leading" secondItem="RMA-6z-UWI" secondAttribute="leading" id="T6N-YC-DvB"/>
+                            <constraint firstItem="H0S-FP-Aap" firstAttribute="centerX" secondItem="AXd-U8-Jta" secondAttribute="centerX" id="U8V-mV-bnt"/>
+                            <constraint firstItem="pmG-wz-DTr" firstAttribute="leading" secondItem="0Cv-GN-SPO" secondAttribute="trailing" constant="26" id="ad7-Lc-v45"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="H0S-FP-Aap" secondAttribute="leading" id="bwq-yK-OWf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TgJ-tr-3k6" secondAttribute="trailing" constant="10" id="cek-Co-8EC"/>
+                            <constraint firstItem="AXd-U8-Jta" firstAttribute="top" secondItem="T5t-XB-J7u" secondAttribute="top" constant="20" id="dzd-df-V9r"/>
+                            <constraint firstItem="0Cv-GN-SPO" firstAttribute="top" secondItem="T5t-XB-J7u" secondAttribute="top" constant="230" id="eJK-KE-p9a"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="WAM-k0-tM1" secondAttribute="leading" id="fXZ-WS-tHb"/>
+                            <constraint firstItem="RMA-6z-UWI" firstAttribute="top" secondItem="TgJ-tr-3k6" secondAttribute="bottom" constant="43" id="gTS-au-6Cs"/>
+                            <constraint firstItem="dMZ-S4-BTo" firstAttribute="leading" secondItem="WAM-k0-tM1" secondAttribute="trailing" constant="31" id="gas-HT-a0b"/>
+                            <constraint firstItem="0Cv-GN-SPO" firstAttribute="leading" secondItem="WAM-k0-tM1" secondAttribute="leading" id="kyT-ma-J5g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pmG-wz-DTr" secondAttribute="trailing" constant="10" id="lDu-nG-dLS"/>
+                            <constraint firstItem="0Cv-GN-SPO" firstAttribute="top" secondItem="WAM-k0-tM1" secondAttribute="bottom" constant="50" id="lKb-Dc-Ocb"/>
+                            <constraint firstItem="0Cv-GN-SPO" firstAttribute="leading" secondItem="H0S-FP-Aap" secondAttribute="leading" id="qBn-Gj-lG7"/>
+                            <constraint firstItem="TgJ-tr-3k6" firstAttribute="top" secondItem="dMZ-S4-BTo" secondAttribute="bottom" constant="8" symbolic="YES" id="sBc-Xl-Ack"/>
+                            <constraint firstItem="AXd-U8-Jta" firstAttribute="leading" secondItem="T5t-XB-J7u" secondAttribute="leading" id="tUH-np-9BO"/>
+                            <constraint firstItem="0Cv-GN-SPO" firstAttribute="top" secondItem="RMA-6z-UWI" secondAttribute="top" id="wYc-HY-sZR"/>
+                            <constraint firstItem="dMZ-S4-BTo" firstAttribute="top" secondItem="AXd-U8-Jta" secondAttribute="bottom" constant="10" id="xda-yb-7Gc"/>
+                            <constraint firstItem="pmG-wz-DTr" firstAttribute="leading" secondItem="RMA-6z-UWI" secondAttribute="leading" id="zsH-j9-aaI"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="dzd-df-V9r"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="tnE-Sg-FVf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dy2-iM-FCf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-960" y="-3162"/>
+        </scene>
+        <!--Ramnavmi-->
+        <scene sceneID="JeE-sI-n83">
+            <objects>
+                <viewController title="Ramnavmi" id="4rv-za-alp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gij-zM-Dlg"/>
+                        <viewControllerLayoutGuide type="bottom" id="UvC-ci-hbz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xqH-Gv-kWL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzH-K6-yEn">
+                                <rect key="frame" x="20" y="570" width="560" height="30"/>
+                                <color key="backgroundColor" red="0.76312921869999994" green="0.87515274570000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="festivals_ramnavami"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Festivals">
+                                    <color key="titleColor" red="0.08235294118" green="0.13725490200000001" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="S9m-4Y-i0f" kind="show" id="4Zx-KJ-rkW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwS-XC-d16">
+                                <rect key="frame" x="30" y="270" width="540" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="246" id="7XA-e6-XGk"/>
+                                </constraints>
+                                <string key="text">Ram Navami is celebrated to proclaim the birth of Lord Sriram, the seventh incarnation of Lord Vishnu.Origin Of Rama Navami According to the great epic Ramayana, once upon a time there lived a King named Dasarath, then king of Ayodhya, who had three wives named Kaushalya, Sumithra and Kaikeyi.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.10980392160000001" green="0.20392156859999999" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7XA-e6-XGk"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VtE-bw-ySg">
+                                <rect key="frame" x="120" y="99" width="360" height="121"/>
+                                <state key="normal" image="ramnavmi"/>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l2J-MZ-MNK">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="l2N-On-yuC"/>
+                                </constraints>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.10980392160000001" green="0.20392156859999999" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Ramnavami" id="hqg-zv-Gki"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86274509803921573" green="0.94901960784313721" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="VtE-bw-ySg" firstAttribute="leading" secondItem="xqH-Gv-kWL" secondAttribute="leadingMargin" constant="100" id="1gt-OU-k5S"/>
+                            <constraint firstItem="nzH-K6-yEn" firstAttribute="top" secondItem="mwS-XC-d16" secondAttribute="bottom" constant="50" id="8U0-gF-tba"/>
+                            <constraint firstItem="mwS-XC-d16" firstAttribute="leading" secondItem="xqH-Gv-kWL" secondAttribute="leadingMargin" constant="10" id="CIB-Mv-gQV"/>
+                            <constraint firstItem="VtE-bw-ySg" firstAttribute="top" secondItem="l2J-MZ-MNK" secondAttribute="bottom" constant="35" id="DWa-ut-OkS"/>
+                            <constraint firstItem="l2J-MZ-MNK" firstAttribute="centerX" secondItem="VtE-bw-ySg" secondAttribute="centerX" id="F2E-hA-PC0"/>
+                            <constraint firstItem="nzH-K6-yEn" firstAttribute="top" secondItem="VtE-bw-ySg" secondAttribute="bottom" constant="350" id="HG3-8z-0dU"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="nzH-K6-yEn" secondAttribute="leading" id="T0E-3J-h0C"/>
+                            <constraint firstItem="mwS-XC-d16" firstAttribute="centerX" secondItem="nzH-K6-yEn" secondAttribute="centerX" id="aq8-Bh-T9B"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nzH-K6-yEn" secondAttribute="trailing" id="d4P-6d-K4U"/>
+                            <constraint firstItem="l2J-MZ-MNK" firstAttribute="top" secondItem="xqH-Gv-kWL" secondAttribute="top" constant="20" id="dg6-J2-wrG"/>
+                            <constraint firstItem="nzH-K6-yEn" firstAttribute="top" secondItem="mwS-XC-d16" secondAttribute="bottom" constant="50" id="kub-xu-pf3"/>
+                            <constraint firstItem="mwS-XC-d16" firstAttribute="top" secondItem="VtE-bw-ySg" secondAttribute="bottom" constant="50" id="mki-oW-6Ss"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VtE-bw-ySg" secondAttribute="trailing" constant="100" id="pyI-n3-q5M"/>
+                            <constraint firstItem="l2J-MZ-MNK" firstAttribute="leading" secondItem="xqH-Gv-kWL" secondAttribute="leading" id="u8H-RN-26E"/>
+                            <constraint firstItem="UvC-ci-hbz" firstAttribute="top" secondItem="nzH-K6-yEn" secondAttribute="bottom" id="uMj-AT-gjq"/>
+                            <constraint firstItem="l2J-MZ-MNK" firstAttribute="top" secondItem="Gij-zM-Dlg" secondAttribute="bottom" id="wLL-IQ-wTS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8U0-gF-tba"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uQF-gi-1e9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.5" y="-3162"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calendar" width="200" height="149"/>
+        <image name="glimpseofhindutva" width="200" height="149"/>
+        <image name="holyfestivals" width="200" height="149"/>
+        <image name="howtobehappy-cropped" width="475" height="260"/>
+        <image name="muhurt" width="200" height="149"/>
+        <image name="ramnavmi" width="350" height="438"/>
+        <image name="sadhana" width="200" height="149"/>
+        <image name="srihanumanjayanti" width="350" height="438"/>
+        <image name="whyareweborn-cropped" width="646" height="225"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="gU9-YQ-kL0"/>
+        <segue reference="uFQ-lw-i7N"/>
+        <segue reference="7LL-5h-qma"/>
+        <segue reference="FKe-1R-12B"/>
+    </inferredMetricsTieBreakers>
+</document>
