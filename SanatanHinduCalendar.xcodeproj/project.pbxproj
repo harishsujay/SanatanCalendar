@@ -14,6 +14,15 @@
 		412C90C81CBA4D7700B6E8AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 412C90C61CBA4D7700B6E8AA /* LaunchScreen.storyboard */; };
 		412C90D31CBA4D7700B6E8AA /* SanatanHinduCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C90D21CBA4D7700B6E8AA /* SanatanHinduCalendarTests.swift */; };
 		412C90DE1CBA4D7700B6E8AA /* SanatanHinduCalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C90DD1CBA4D7700B6E8AA /* SanatanHinduCalendarUITests.swift */; };
+		BA205C681CEF176E00936DEA /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA205C671CEF176E00936DEA /* CalendarViewController.swift */; };
+		BA205C6B1CEF193F00936DEA /* ViewController0.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA205C691CEF193F00936DEA /* ViewController0.swift */; };
+		BA205C6C1CEF193F00936DEA /* ViewController0.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA205C6A1CEF193F00936DEA /* ViewController0.xib */; };
+		BA205C6F1CEF196300936DEA /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA205C6D1CEF196300936DEA /* ViewController1.swift */; };
+		BA205C701CEF196300936DEA /* ViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA205C6E1CEF196300936DEA /* ViewController1.xib */; };
+		BA205C731CEF197000936DEA /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA205C711CEF197000936DEA /* ViewController2.swift */; };
+		BA205C741CEF197000936DEA /* ViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA205C721CEF197000936DEA /* ViewController2.xib */; };
+		BA205C771CEF197C00936DEA /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA205C751CEF197C00936DEA /* ViewController3.swift */; };
+		BA205C781CEF197C00936DEA /* ViewController3.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA205C761CEF197C00936DEA /* ViewController3.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +56,15 @@
 		412C90D91CBA4D7700B6E8AA /* SanatanHinduCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SanatanHinduCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		412C90DD1CBA4D7700B6E8AA /* SanatanHinduCalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanatanHinduCalendarUITests.swift; sourceTree = "<group>"; };
 		412C90DF1CBA4D7700B6E8AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA205C671CEF176E00936DEA /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		BA205C691CEF193F00936DEA /* ViewController0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController0.swift; sourceTree = "<group>"; };
+		BA205C6A1CEF193F00936DEA /* ViewController0.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController0.xib; sourceTree = "<group>"; };
+		BA205C6D1CEF196300936DEA /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
+		BA205C6E1CEF196300936DEA /* ViewController1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController1.xib; sourceTree = "<group>"; };
+		BA205C711CEF197000936DEA /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		BA205C721CEF197000936DEA /* ViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController2.xib; sourceTree = "<group>"; };
+		BA205C751CEF197C00936DEA /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		BA205C761CEF197C00936DEA /* ViewController3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController3.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +117,19 @@
 			children = (
 				412C90BD1CBA4D7700B6E8AA /* AppDelegate.swift */,
 				412C90BF1CBA4D7700B6E8AA /* ViewController.swift */,
+				BA205C751CEF197C00936DEA /* ViewController3.swift */,
+				BA205C761CEF197C00936DEA /* ViewController3.xib */,
+				BA205C711CEF197000936DEA /* ViewController2.swift */,
+				BA205C721CEF197000936DEA /* ViewController2.xib */,
+				BA205C6D1CEF196300936DEA /* ViewController1.swift */,
+				BA205C6E1CEF196300936DEA /* ViewController1.xib */,
+				BA205C691CEF193F00936DEA /* ViewController0.swift */,
+				BA205C6A1CEF193F00936DEA /* ViewController0.xib */,
 				412C90C11CBA4D7700B6E8AA /* Main.storyboard */,
 				412C90C41CBA4D7700B6E8AA /* Assets.xcassets */,
 				412C90C61CBA4D7700B6E8AA /* LaunchScreen.storyboard */,
 				412C90C91CBA4D7700B6E8AA /* Info.plist */,
+				BA205C671CEF176E00936DEA /* CalendarViewController.swift */,
 			);
 			path = SanatanHinduCalendar;
 			sourceTree = "<group>";
@@ -230,8 +257,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				412C90C81CBA4D7700B6E8AA /* LaunchScreen.storyboard in Resources */,
+				BA205C701CEF196300936DEA /* ViewController1.xib in Resources */,
 				412C90C51CBA4D7700B6E8AA /* Assets.xcassets in Resources */,
+				BA205C741CEF197000936DEA /* ViewController2.xib in Resources */,
 				412C90C31CBA4D7700B6E8AA /* Main.storyboard in Resources */,
+				BA205C781CEF197C00936DEA /* ViewController3.xib in Resources */,
+				BA205C6C1CEF193F00936DEA /* ViewController0.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +287,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA205C681CEF176E00936DEA /* CalendarViewController.swift in Sources */,
+				BA205C6F1CEF196300936DEA /* ViewController1.swift in Sources */,
 				412C90C01CBA4D7700B6E8AA /* ViewController.swift in Sources */,
 				412C90BE1CBA4D7700B6E8AA /* AppDelegate.swift in Sources */,
+				BA205C6B1CEF193F00936DEA /* ViewController0.swift in Sources */,
+				BA205C771CEF197C00936DEA /* ViewController3.swift in Sources */,
+				BA205C731CEF197000936DEA /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
