@@ -638,9 +638,9 @@ Pronunciation 'Hanumān Jayantī'</string>
         <image name="whyareweborn-cropped" width="646" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ero-ld-gFx"/>
-        <segue reference="FKe-1R-12B"/>
-        <segue reference="TrN-M4-KNz"/>
+        <segue reference="7LL-5h-qma"/>
         <segue reference="uFQ-lw-i7N"/>
+        <segue reference="gU9-YQ-kL0"/>
+        <segue reference="FKe-1R-12B"/>
     </inferredMetricsTieBreakers>
 </document>

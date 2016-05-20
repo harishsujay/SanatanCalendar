@@ -14,6 +14,9 @@
 		412C90C81CBA4D7700B6E8AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 412C90C61CBA4D7700B6E8AA /* LaunchScreen.storyboard */; };
 		412C90D31CBA4D7700B6E8AA /* SanatanHinduCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C90D21CBA4D7700B6E8AA /* SanatanHinduCalendarTests.swift */; };
 		412C90DE1CBA4D7700B6E8AA /* SanatanHinduCalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C90DD1CBA4D7700B6E8AA /* SanatanHinduCalendarUITests.swift */; };
+		68990D511CEF07100002BC0C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68990D501CEF07100002BC0C /* Model.swift */; };
+		68990D531CEF071D0002BC0C /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68990D521CEF071D0002BC0C /* Event.swift */; };
+		68990D561CEF07F70002BC0C /* SanatanHinduCalendar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 68990D541CEF07F70002BC0C /* SanatanHinduCalendar.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		412C90D91CBA4D7700B6E8AA /* SanatanHinduCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SanatanHinduCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		412C90DD1CBA4D7700B6E8AA /* SanatanHinduCalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanatanHinduCalendarUITests.swift; sourceTree = "<group>"; };
 		412C90DF1CBA4D7700B6E8AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68990D501CEF07100002BC0C /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		68990D521CEF071D0002BC0C /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		68990D551CEF07F70002BC0C /* SanatanHinduCalendar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SanatanHinduCalendar.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,12 @@
 		412C90BC1CBA4D7700B6E8AA /* SanatanHinduCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				412C90BD1CBA4D7700B6E8AA /* AppDelegate.swift */,
-				412C90BF1CBA4D7700B6E8AA /* ViewController.swift */,
-				412C90C11CBA4D7700B6E8AA /* Main.storyboard */,
-				412C90C41CBA4D7700B6E8AA /* Assets.xcassets */,
-				412C90C61CBA4D7700B6E8AA /* LaunchScreen.storyboard */,
+				68990D4D1CEF06450002BC0C /* Model */,
+				68990D4E1CEF064B0002BC0C /* View */,
+				68990D4C1CEF063C0002BC0C /* Controller */,
+				68990D4F1CEF06940002BC0C /* Assets */,
 				412C90C91CBA4D7700B6E8AA /* Info.plist */,
+				68990D541CEF07F70002BC0C /* SanatanHinduCalendar.xcdatamodeld */,
 			);
 			path = SanatanHinduCalendar;
 			sourceTree = "<group>";
@@ -123,6 +129,41 @@
 				412C90DF1CBA4D7700B6E8AA /* Info.plist */,
 			);
 			path = SanatanHinduCalendarUITests;
+			sourceTree = "<group>";
+		};
+		68990D4C1CEF063C0002BC0C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				412C90BF1CBA4D7700B6E8AA /* ViewController.swift */,
+				412C90BD1CBA4D7700B6E8AA /* AppDelegate.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		68990D4D1CEF06450002BC0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				68990D501CEF07100002BC0C /* Model.swift */,
+				68990D521CEF071D0002BC0C /* Event.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		68990D4E1CEF064B0002BC0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				412C90C11CBA4D7700B6E8AA /* Main.storyboard */,
+				412C90C61CBA4D7700B6E8AA /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		68990D4F1CEF06940002BC0C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				412C90C41CBA4D7700B6E8AA /* Assets.xcassets */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +298,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				412C90C01CBA4D7700B6E8AA /* ViewController.swift in Sources */,
+				68990D561CEF07F70002BC0C /* SanatanHinduCalendar.xcdatamodeld in Sources */,
 				412C90BE1CBA4D7700B6E8AA /* AppDelegate.swift in Sources */,
+				68990D511CEF07100002BC0C /* Model.swift in Sources */,
+				68990D531CEF071D0002BC0C /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +549,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		68990D541CEF07F70002BC0C /* SanatanHinduCalendar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				68990D551CEF07F70002BC0C /* SanatanHinduCalendar.xcdatamodel */,
+			);
+			currentVersion = 68990D551CEF07F70002BC0C /* SanatanHinduCalendar.xcdatamodel */;
+			path = SanatanHinduCalendar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 412C90B21CBA4D7700B6E8AA /* Project object */;
 }
