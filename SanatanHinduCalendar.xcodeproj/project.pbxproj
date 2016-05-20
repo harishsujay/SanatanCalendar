@@ -17,6 +17,7 @@
 		68990D511CEF07100002BC0C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68990D501CEF07100002BC0C /* Model.swift */; };
 		68990D531CEF071D0002BC0C /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68990D521CEF071D0002BC0C /* Event.swift */; };
 		68990D561CEF07F70002BC0C /* SanatanHinduCalendar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 68990D541CEF07F70002BC0C /* SanatanHinduCalendar.xcdatamodeld */; };
+		68990D581CEF20510002BC0C /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68990D571CEF20510002BC0C /* EventTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		68990D501CEF07100002BC0C /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		68990D521CEF071D0002BC0C /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		68990D551CEF07F70002BC0C /* SanatanHinduCalendar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SanatanHinduCalendar.xcdatamodel; sourceTree = "<group>"; };
+		68990D571CEF20510002BC0C /* EventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			children = (
 				412C90BF1CBA4D7700B6E8AA /* ViewController.swift */,
 				412C90BD1CBA4D7700B6E8AA /* AppDelegate.swift */,
+				68990D571CEF20510002BC0C /* EventTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				68990D561CEF07F70002BC0C /* SanatanHinduCalendar.xcdatamodeld in Sources */,
 				412C90BE1CBA4D7700B6E8AA /* AppDelegate.swift in Sources */,
 				68990D511CEF07100002BC0C /* Model.swift in Sources */,
+				68990D581CEF20510002BC0C /* EventTableViewController.swift in Sources */,
 				68990D531CEF071D0002BC0C /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
