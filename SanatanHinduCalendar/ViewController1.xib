@@ -14,7 +14,23 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="0.31063851441895773" green="1" blue="0.23162210792046589" alpha="1" colorSpace="calibratedRGB"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feb" translatesAutoresizingMaskIntoConstraints="NO" id="Lph-cc-7gY">
+                    <rect key="frame" x="10" y="20" width="355" height="575"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="575" id="6ir-b0-pIk"/>
+                        <constraint firstAttribute="width" constant="355" id="m9A-b7-yR1"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.79607843140000001" green="0.90980392160000001" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Lph-cc-7gY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="FXw-Zr-MeX"/>
+                <constraint firstItem="Lph-cc-7gY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="JH5-Zz-0l0"/>
+            </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="feb" width="1000" height="1614"/>
+    </resources>
 </document>

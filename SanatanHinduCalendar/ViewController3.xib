@@ -14,7 +14,24 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="0.98887324858639192" blue="0.16853689202977995" alpha="1" colorSpace="calibratedRGB"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="apr" translatesAutoresizingMaskIntoConstraints="NO" id="JkY-QK-xAr">
+                    <rect key="frame" x="18" y="8" width="355" height="575"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="575" id="8dh-Fv-kyv"/>
+                        <constraint firstAttribute="width" constant="355" id="uck-nD-VCh"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.79607843140000001" green="0.90980392160000001" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="JkY-QK-xAr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="DzA-PF-auN"/>
+                <constraint firstItem="JkY-QK-xAr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="gLR-gw-lxx"/>
+            </constraints>
+            <point key="canvasLocation" x="340" y="443"/>
         </view>
     </objects>
+    <resources>
+        <image name="apr" width="1000" height="1614"/>
+    </resources>
 </document>
