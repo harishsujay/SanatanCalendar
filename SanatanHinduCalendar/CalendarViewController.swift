@@ -11,8 +11,10 @@ import UIKit
 class CalendarViewController: UIViewController
 {
     
+  
     @IBOutlet weak var scrollView: UIScrollView!
     
+    @IBOutlet weak var viewScroll: UIView!
     
     override func viewDidLoad()
     {
@@ -142,6 +144,10 @@ class CalendarViewController: UIViewController
         
         
         self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width * 12, self.view.frame.size.height - 66);
+        
+        
+        //self.scrollView.minimumZoomScale = 1.0;
+        // self.scrollView.maximumZoomScale = 5.0;
     }
     
     override func didReceiveMemoryWarning()
@@ -150,7 +156,11 @@ class CalendarViewController: UIViewController
         // Dispose of any resources that can be recreated.
     }
     
-    
+   // func viewForZoomingInScrollView(viewScroll: UIView) -> UIView?
+   // {
+   //     return self.viewScroll
+   //}
+
 }
 
 

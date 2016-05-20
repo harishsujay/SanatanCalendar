@@ -18,47 +18,111 @@
                     <view key="view" contentMode="scaleToFill" id="1a4-j8-Zvb">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVw-qD-HTf">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XI9-TW-qyt">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                            </scrollView>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXp-n4-cun">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <color key="backgroundColor" red="0.71764705880000002" green="0.83921568629999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Home">
+                                            <color key="titleColor" red="0.08235294118" green="0.13725490200000001" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="Vmr-jo-1HS"/>
+                                        </connections>
+                                    </button>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n60-VK-1Ny">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="6Ox-tf-bIN" id="kaK-fo-J5Z"/>
+                                        </connections>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.83529411760000005" green="0.92941176469999998" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="eXp-n4-cun" secondAttribute="bottom" id="2F6-fL-UxC"/>
+                                    <constraint firstItem="eXp-n4-cun" firstAttribute="leading" secondItem="XI9-TW-qyt" secondAttribute="leading" constant="50" id="4gh-fD-bF0">
+                                        <variation key="widthClass=compact" constant="20"/>
+                                    </constraint>
+                                    <constraint firstItem="n60-VK-1Ny" firstAttribute="centerX" secondItem="eXp-n4-cun" secondAttribute="centerX" id="Hek-5s-BX8"/>
+                                    <constraint firstItem="n60-VK-1Ny" firstAttribute="top" secondItem="XI9-TW-qyt" secondAttribute="top" id="PIC-zf-iag"/>
+                                    <constraint firstItem="n60-VK-1Ny" firstAttribute="leading" secondItem="XI9-TW-qyt" secondAttribute="leading" id="fGI-fO-HeO"/>
+                                    <constraint firstAttribute="trailing" secondItem="eXp-n4-cun" secondAttribute="trailing" constant="50" id="fdd-rJ-Zuo">
+                                        <variation key="widthClass=compact" constant="20"/>
+                                    </constraint>
+                                    <constraint firstItem="eXp-n4-cun" firstAttribute="top" secondItem="n60-VK-1Ny" secondAttribute="bottom" id="w1x-Sa-bU7"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="eXp-n4-cun"/>
+                                        <exclude reference="n60-VK-1Ny"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="Hek-5s-BX8"/>
+                                        <exclude reference="PIC-zf-iag"/>
+                                        <exclude reference="fGI-fO-HeO"/>
+                                        <exclude reference="2F6-fL-UxC"/>
+                                        <exclude reference="4gh-fD-bF0"/>
+                                        <exclude reference="fdd-rJ-Zuo"/>
+                                        <exclude reference="w1x-Sa-bU7"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="eXp-n4-cun"/>
+                                        <include reference="n60-VK-1Ny"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="Hek-5s-BX8"/>
+                                        <include reference="PIC-zf-iag"/>
+                                        <include reference="fGI-fO-HeO"/>
+                                        <include reference="2F6-fL-UxC"/>
+                                        <include reference="4gh-fD-bF0"/>
+                                        <include reference="fdd-rJ-Zuo"/>
+                                        <include reference="w1x-Sa-bU7"/>
+                                    </mask>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="iVw-qD-HTf" secondAttribute="trailing" id="1i2-kc-FqL"/>
-                            <constraint firstItem="iVw-qD-HTf" firstAttribute="leading" secondItem="1a4-j8-Zvb" secondAttribute="leading" id="A0M-cg-2lL"/>
-                            <constraint firstItem="iVw-qD-HTf" firstAttribute="top" secondItem="9nQ-fr-XbJ" secondAttribute="bottom" id="IeX-wH-l6h"/>
-                            <constraint firstItem="iVw-qD-HTf" firstAttribute="bottom" secondItem="pbJ-ba-hwG" secondAttribute="top" id="Nzr-m7-ttt"/>
+                            <constraint firstItem="XI9-TW-qyt" firstAttribute="leading" secondItem="1a4-j8-Zvb" secondAttribute="leading" id="VXJ-dk-MBr"/>
+                            <constraint firstAttribute="trailing" secondItem="XI9-TW-qyt" secondAttribute="trailing" id="dFl-hl-5uC"/>
+                            <constraint firstItem="XI9-TW-qyt" firstAttribute="bottom" secondItem="pbJ-ba-hwG" secondAttribute="top" id="vmz-Wc-SqI"/>
+                            <constraint firstItem="XI9-TW-qyt" firstAttribute="top" secondItem="1a4-j8-Zvb" secondAttribute="top" id="zGF-aT-NHQ"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="iVw-qD-HTf"/>
+                                <exclude reference="XI9-TW-qyt"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="1i2-kc-FqL"/>
-                                <exclude reference="A0M-cg-2lL"/>
-                                <exclude reference="IeX-wH-l6h"/>
-                                <exclude reference="Nzr-m7-ttt"/>
+                                <exclude reference="VXJ-dk-MBr"/>
+                                <exclude reference="dFl-hl-5uC"/>
+                                <exclude reference="vmz-Wc-SqI"/>
+                                <exclude reference="zGF-aT-NHQ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="iVw-qD-HTf"/>
+                                <include reference="XI9-TW-qyt"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="1i2-kc-FqL"/>
-                                <include reference="A0M-cg-2lL"/>
-                                <include reference="IeX-wH-l6h"/>
-                                <include reference="Nzr-m7-ttt"/>
+                                <include reference="VXJ-dk-MBr"/>
+                                <include reference="dFl-hl-5uC"/>
+                                <include reference="vmz-Wc-SqI"/>
+                                <include reference="zGF-aT-NHQ"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="scrollView" destination="iVw-qD-HTf" id="MKs-AN-dMr"/>
+                        <outlet property="scrollView" destination="n60-VK-1Ny" id="ASf-UP-55w"/>
+                        <outlet property="viewScroll" destination="XI9-TW-qyt" id="icn-xq-1Si"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bSp-5l-2vk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3346.5" y="-2244"/>
+            <point key="canvasLocation" x="-589.5" y="-2137"/>
         </scene>
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
@@ -221,6 +285,15 @@
                                 <color key="textColor" red="0.086274509803921567" green="0.13725490196078433" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckb-LE-F9f">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.086274509803921567" green="0.13725490196078433" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Sanatan Almanac 2016" id="TfA-g0-sie"/>
+                                </items>
+                            </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vg0-Y2-pOs">
                                 <rect key="frame" x="20" y="570" width="560" height="30"/>
                                 <color key="backgroundColor" red="0.76312921869999994" green="0.87515274570000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -233,15 +306,6 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="Boh-iU-EOI"/>
                                 </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckb-LE-F9f">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.086274509803921567" green="0.13725490196078433" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Sanatan Almanac 2016" id="TfA-g0-sie"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.86274509803921573" green="0.94509803921568625" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -258,8 +322,8 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="FtZ-oB-2DN"/>
-                                <exclude reference="vg0-Y2-pOs"/>
                                 <exclude reference="ckb-LE-F9f"/>
+                                <exclude reference="vg0-Y2-pOs"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="dJM-BS-pqD"/>
@@ -276,8 +340,8 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="FtZ-oB-2DN"/>
-                                <include reference="vg0-Y2-pOs"/>
                                 <include reference="ckb-LE-F9f"/>
+                                <include reference="vg0-Y2-pOs"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="dJM-BS-pqD"/>
@@ -692,8 +756,8 @@ Pronunciation 'Hanumān Jayantī'</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="uFQ-lw-i7N"/>
-        <segue reference="Ero-ld-gFx"/>
-        <segue reference="FKe-1R-12B"/>
+        <segue reference="Vmr-jo-1HS"/>
         <segue reference="TrN-M4-KNz"/>
+        <segue reference="FKe-1R-12B"/>
     </inferredMetricsTieBreakers>
 </document>
