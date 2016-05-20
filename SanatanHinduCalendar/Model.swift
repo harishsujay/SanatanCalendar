@@ -17,7 +17,7 @@ class Model {
     
     // MARK: - CRUD
     
-    func saveProduct(name: String, place:String, desc:String)
+    func saveEvent(name: String, place:String, desc:String)
     {
         let appDelegate =
         UIApplication.sharedApplication().delegate as! AppDelegate

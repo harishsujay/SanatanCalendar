@@ -62,7 +62,7 @@
                                                 </constraints>
                                                 <state key="normal" image="muhurt"/>
                                                 <connections>
-                                                    <segue destination="7mb-29-CMY" kind="show" id="Cpi-Vh-pDm"/>
+                                                    <segue destination="hzi-2d-IZe" kind="show" id="o7e-iA-vxu"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -148,7 +148,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1751" y="-2155"/>
+            <point key="canvasLocation" x="-851" y="-2137"/>
         </scene>
         <!--Coming Soon-->
         <scene sceneID="FX1-XF-ao4">
@@ -314,7 +314,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgk-hQ-Uwn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1206" y="-1182"/>
+            <point key="canvasLocation" x="-851" y="-1296"/>
         </scene>
         <!--How to be happy-->
         <scene sceneID="jtY-6m-gLV">
@@ -381,7 +381,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Seg-3P-NzD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-37" y="-1182"/>
+            <point key="canvasLocation" x="85" y="-1290"/>
         </scene>
         <!--Festivals-->
         <scene sceneID="Yda-0t-iL1">
@@ -536,7 +536,7 @@ Pronunciation 'Hanumān Jayantī'</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dy2-iM-FCf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-960" y="-3162"/>
+            <point key="canvasLocation" x="-851" y="-3044"/>
         </scene>
         <!--Ramnavmi-->
         <scene sceneID="JeE-sI-n83">
@@ -622,7 +622,134 @@ Pronunciation 'Hanumān Jayantī'</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uQF-gi-1e9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="85.5" y="-3162"/>
+            <point key="canvasLocation" x="79" y="-3044"/>
+        </scene>
+        <!--Event View Controller-->
+        <scene sceneID="0HV-Xf-48v">
+            <objects>
+                <viewController id="6J0-dF-zTY" customClass="EventViewController" customModule="SanatanHinduCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RRe-1M-LiE"/>
+                        <viewControllerLayoutGuide type="bottom" id="hYq-lU-kDu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hfh-YZ-GT1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="33A-kJ-MXS">
+                                <rect key="frame" x="20" y="78" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Place" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x7e-5k-V8q" userLabel="Place">
+                                <rect key="frame" x="20" y="116" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mtd-19-Wtu">
+                                <rect key="frame" x="20" y="154" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2d-Wu-lps">
+                                <rect key="frame" x="20" y="192" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="save:" destination="6J0-dF-zTY" eventType="touchUpInside" id="rCl-2k-sBj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="33A-kJ-MXS" secondAttribute="leading" id="0VG-QE-Ni9"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="V2d-Wu-lps" secondAttribute="leading" id="10x-WV-38F"/>
+                            <constraint firstItem="x7e-5k-V8q" firstAttribute="top" secondItem="33A-kJ-MXS" secondAttribute="bottom" constant="8" id="44Y-db-AnY"/>
+                            <constraint firstItem="Mtd-19-Wtu" firstAttribute="top" secondItem="x7e-5k-V8q" secondAttribute="bottom" constant="8" id="8Zr-0B-q6R"/>
+                            <constraint firstItem="V2d-Wu-lps" firstAttribute="top" secondItem="Mtd-19-Wtu" secondAttribute="bottom" constant="8" id="D4j-c0-g0q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mtd-19-Wtu" secondAttribute="trailing" id="Fab-vO-5iP"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="x7e-5k-V8q" secondAttribute="leading" id="N7H-PZ-sI3"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Mtd-19-Wtu" secondAttribute="leading" id="Phl-gd-7bP"/>
+                            <constraint firstItem="33A-kJ-MXS" firstAttribute="top" secondItem="RRe-1M-LiE" secondAttribute="bottom" constant="14" id="Xnz-7B-dft"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="33A-kJ-MXS" secondAttribute="trailing" id="fwD-He-w3i"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="x7e-5k-V8q" secondAttribute="trailing" id="oNF-Xz-mVd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="desc" destination="Mtd-19-Wtu" id="Ixn-e0-H95"/>
+                        <outlet property="name" destination="33A-kJ-MXS" id="cpf-al-mzb"/>
+                        <outlet property="place" destination="x7e-5k-V8q" id="Fdy-F7-7hZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LiQ-SS-gQ1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1588" y="-3044"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="8Gg-nm-MPQ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kmP-BG-feK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="Vof-8T-PD3" customClass="EventTableViewController" customModule="SanatanHinduCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="vGd-kl-hb9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="FYY-DK-3xw" detailTextLabel="GcH-FM-V1L" style="IBUITableViewCellStyleSubtitle" id="4Dn-Nw-Gq0">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Dn-Nw-Gq0" id="V3Z-8u-sLz">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FYY-DK-3xw">
+                                            <rect key="frame" x="15" y="6" width="31.5" height="19.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GcH-FM-V1L">
+                                            <rect key="frame" x="15" y="25.5" width="40.5" height="13.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Vof-8T-PD3" id="dKS-Rs-mgD"/>
+                            <outlet property="delegate" destination="Vof-8T-PD3" id="3Gq-W4-RQH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Title" id="bfE-aJ-jTs">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="iLz-S7-pQO">
+                            <connections>
+                                <segue destination="6J0-dF-zTY" kind="show" id="GNb-oJ-sx7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="-2294" y="-3044"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HlX-tQ-Ynb">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cQA-BN-Au8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="hzi-2d-IZe" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="irv-EG-lL5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Vof-8T-PD3" kind="relationship" relationship="rootViewController" id="HgS-pw-xXd"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-1896" y="-2280"/>
         </scene>
     </scenes>
     <resources>
@@ -638,9 +765,9 @@ Pronunciation 'Hanumān Jayantī'</string>
         <image name="whyareweborn-cropped" width="646" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7LL-5h-qma"/>
-        <segue reference="uFQ-lw-i7N"/>
-        <segue reference="gU9-YQ-kL0"/>
         <segue reference="FKe-1R-12B"/>
+        <segue reference="gU9-YQ-kL0"/>
+        <segue reference="uFQ-lw-i7N"/>
+        <segue reference="TrN-M4-KNz"/>
     </inferredMetricsTieBreakers>
 </document>
