@@ -19,6 +19,12 @@
 		68990D561CEF07F70002BC0C /* SanatanHinduCalendar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 68990D541CEF07F70002BC0C /* SanatanHinduCalendar.xcdatamodeld */; };
 		68990D581CEF20510002BC0C /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68990D571CEF20510002BC0C /* EventTableViewController.swift */; };
 		68990D5A1CEF30160002BC0C /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68990D591CEF30160002BC0C /* EventViewController.swift */; };
+		68990D5C1CF0608F0002BC0C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68990D5B1CF0608F0002BC0C /* CoreLocation.framework */; };
+		68990D5E1CF0609B0002BC0C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68990D5D1CF0609B0002BC0C /* MapKit.framework */; };
+		68990D601CF060A80002BC0C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68990D5F1CF060A80002BC0C /* UIKit.framework */; };
+		68990D621CF060BF0002BC0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68990D611CF060BF0002BC0C /* Foundation.framework */; };
+		68990D641CF060CA0002BC0C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68990D631CF060CA0002BC0C /* CoreGraphics.framework */; };
+		68990D661CF066670002BC0C /* CoreMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68990D651CF066670002BC0C /* CoreMapsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +63,12 @@
 		68990D551CEF07F70002BC0C /* SanatanHinduCalendar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SanatanHinduCalendar.xcdatamodel; sourceTree = "<group>"; };
 		68990D571CEF20510002BC0C /* EventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
 		68990D591CEF30160002BC0C /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		68990D5B1CF0608F0002BC0C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		68990D5D1CF0609B0002BC0C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		68990D5F1CF060A80002BC0C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		68990D611CF060BF0002BC0C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		68990D631CF060CA0002BC0C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		68990D651CF066670002BC0C /* CoreMapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreMapsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68990D641CF060CA0002BC0C /* CoreGraphics.framework in Frameworks */,
+				68990D621CF060BF0002BC0C /* Foundation.framework in Frameworks */,
+				68990D601CF060A80002BC0C /* UIKit.framework in Frameworks */,
+				68990D5E1CF0609B0002BC0C /* MapKit.framework in Frameworks */,
+				68990D5C1CF0608F0002BC0C /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +104,11 @@
 		412C90B11CBA4D7700B6E8AA = {
 			isa = PBXGroup;
 			children = (
+				68990D631CF060CA0002BC0C /* CoreGraphics.framework */,
+				68990D611CF060BF0002BC0C /* Foundation.framework */,
+				68990D5F1CF060A80002BC0C /* UIKit.framework */,
+				68990D5D1CF0609B0002BC0C /* MapKit.framework */,
+				68990D5B1CF0608F0002BC0C /* CoreLocation.framework */,
 				412C90BC1CBA4D7700B6E8AA /* SanatanHinduCalendar */,
 				412C90D11CBA4D7700B6E8AA /* SanatanHinduCalendarTests */,
 				412C90DC1CBA4D7700B6E8AA /* SanatanHinduCalendarUITests */,
@@ -142,6 +164,7 @@
 				412C90BD1CBA4D7700B6E8AA /* AppDelegate.swift */,
 				68990D571CEF20510002BC0C /* EventTableViewController.swift */,
 				68990D591CEF30160002BC0C /* EventViewController.swift */,
+				68990D651CF066670002BC0C /* CoreMapsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -303,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68990D661CF066670002BC0C /* CoreMapsViewController.swift in Sources */,
 				412C90C01CBA4D7700B6E8AA /* ViewController.swift in Sources */,
 				68990D561CEF07F70002BC0C /* SanatanHinduCalendar.xcdatamodeld in Sources */,
 				68990D5A1CEF30160002BC0C /* EventViewController.swift in Sources */,

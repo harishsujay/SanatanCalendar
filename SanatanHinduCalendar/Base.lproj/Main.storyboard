@@ -247,6 +247,41 @@
             </objects>
             <point key="canvasLocation" x="85.5" y="-2137"/>
         </scene>
+        <!--Core Maps-->
+        <scene sceneID="t3a-4l-5i0">
+            <objects>
+                <viewController title="Core Maps" id="HDg-PY-OvA" customClass="CoreMapsViewController" customModule="SanatanHinduCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="icO-AL-xMI"/>
+                        <viewControllerLayoutGuide type="bottom" id="c67-2T-yhw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ul1-SY-R78">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Wq-SL-b3k">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Wq-SL-b3k" firstAttribute="leading" secondItem="ul1-SY-R78" secondAttribute="leading" id="1wq-46-qLf"/>
+                            <constraint firstItem="1Wq-SL-b3k" firstAttribute="bottom" secondItem="c67-2T-yhw" secondAttribute="top" id="5iK-Kc-7Qz"/>
+                            <constraint firstAttribute="trailing" secondItem="1Wq-SL-b3k" secondAttribute="trailing" id="VVx-wk-g2w"/>
+                            <constraint firstItem="1Wq-SL-b3k" firstAttribute="top" secondItem="icO-AL-xMI" secondAttribute="bottom" id="X0T-D9-OEy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Events Map" id="jfb-ef-fqD">
+                        <barButtonItem key="backBarButtonItem" title="Create Events" id="gPP-UT-ALb"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="1Wq-SL-b3k" id="W6W-O8-Xhs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FPl-vq-MQz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-956" y="-1296"/>
+        </scene>
         <!--Sadhana-->
         <scene sceneID="thE-cj-r7o">
             <objects>
@@ -317,7 +352,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgk-hQ-Uwn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-851" y="-1296"/>
+            <point key="canvasLocation" x="-39" y="-1296"/>
         </scene>
         <!--How to be happy-->
         <scene sceneID="jtY-6m-gLV">
@@ -384,7 +419,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Seg-3P-NzD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="85" y="-1290"/>
+            <point key="canvasLocation" x="897" y="-1290"/>
         </scene>
         <!--Festivals-->
         <scene sceneID="Yda-0t-iL1">
@@ -661,6 +696,13 @@ Pronunciation 'Hanumān Jayantī'</string>
                                     <action selector="save:" destination="6J0-dF-zTY" eventType="touchUpInside" id="rCl-2k-sBj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgq-p8-XRq">
+                                <rect key="frame" x="134" y="192" width="79" height="30"/>
+                                <state key="normal" title="Open Maps"/>
+                                <connections>
+                                    <segue destination="4Sx-6d-1MO" kind="show" id="gky-DH-iwL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -672,9 +714,11 @@ Pronunciation 'Hanumān Jayantī'</string>
                             <constraint firstAttribute="trailingMargin" secondItem="Mtd-19-Wtu" secondAttribute="trailing" id="Fab-vO-5iP"/>
                             <constraint firstAttribute="leadingMargin" secondItem="x7e-5k-V8q" secondAttribute="leading" id="N7H-PZ-sI3"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Mtd-19-Wtu" secondAttribute="leading" id="Phl-gd-7bP"/>
+                            <constraint firstItem="Kgq-p8-XRq" firstAttribute="leading" secondItem="V2d-Wu-lps" secondAttribute="trailing" constant="80" id="WBM-QK-j3w"/>
                             <constraint firstItem="33A-kJ-MXS" firstAttribute="top" secondItem="RRe-1M-LiE" secondAttribute="bottom" constant="14" id="Xnz-7B-dft"/>
                             <constraint firstAttribute="trailingMargin" secondItem="33A-kJ-MXS" secondAttribute="trailing" id="fwD-He-w3i"/>
                             <constraint firstAttribute="trailingMargin" secondItem="x7e-5k-V8q" secondAttribute="trailing" id="oNF-Xz-mVd"/>
+                            <constraint firstItem="Kgq-p8-XRq" firstAttribute="top" secondItem="Mtd-19-Wtu" secondAttribute="bottom" constant="8" id="qeB-iv-pjj"/>
                         </constraints>
                     </view>
                     <connections>
@@ -757,7 +801,25 @@ Pronunciation 'Hanumān Jayantī'</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cQA-BN-Au8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1896" y="-2280"/>
+            <point key="canvasLocation" x="-2052" y="-2119"/>
+        </scene>
+        <!--Maps Navigation Controller-->
+        <scene sceneID="OWr-y7-5y4">
+            <objects>
+                <navigationController title="Maps Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="4Sx-6d-1MO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dtt-5m-RKR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HDg-PY-OvA" kind="relationship" relationship="rootViewController" id="JIV-La-gKa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H7i-8Z-vDM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1786" y="-1296"/>
         </scene>
     </scenes>
     <resources>
