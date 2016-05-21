@@ -242,7 +242,7 @@
                                         <variation key="widthClass=compact" constant="40"/>
                                     </constraint>
                                     <constraint firstItem="8Ya-FK-hEU" firstAttribute="leading" secondItem="NTa-T8-YGU" secondAttribute="leading" constant="35" id="434-ER-4sr">
-                                        <variation key="widthClass=compact" constant="15"/>
+                                        <variation key="widthClass=compact" constant="10"/>
                                     </constraint>
                                     <constraint firstItem="owS-0i-xfn" firstAttribute="leading" secondItem="PFM-Yg-Uhd" secondAttribute="trailing" constant="38" id="60d-3s-3u2">
                                         <variation key="widthClass=compact" constant="5"/>
@@ -253,7 +253,7 @@
                                     </constraint>
                                     <constraint firstItem="xed-sP-L14" firstAttribute="width" secondItem="NTa-T8-YGU" secondAttribute="width" id="GEi-oH-leW"/>
                                     <constraint firstItem="QHu-Jy-BTI" firstAttribute="leading" secondItem="NTa-T8-YGU" secondAttribute="leading" constant="35" id="Gng-3n-oUD">
-                                        <variation key="widthClass=compact" constant="15"/>
+                                        <variation key="widthClass=compact" constant="10"/>
                                     </constraint>
                                     <constraint firstAttribute="trailing" secondItem="owS-0i-xfn" secondAttribute="trailing" constant="60" id="H13-d1-3CM">
                                         <variation key="widthClass=compact" constant="40"/>
@@ -425,9 +425,11 @@
                         </subviews>
                         <color key="backgroundColor" red="0.86274509803921573" green="0.94509803921568625" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="FtZ-oB-2DN" firstAttribute="centerX" secondItem="QSA-pJ-QWv" secondAttribute="centerX" id="4Qu-6b-QNC"/>
                             <constraint firstItem="ckb-LE-F9f" firstAttribute="leading" secondItem="QSA-pJ-QWv" secondAttribute="leadingMargin" constant="-19" id="API-cW-trV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="FtZ-oB-2DN" secondAttribute="trailing" constant="20" id="Guh-AB-eR5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ckb-LE-F9f" secondAttribute="trailing" constant="-21" id="P3b-uJ-Rn3"/>
+                            <constraint firstItem="FtZ-oB-2DN" firstAttribute="centerY" secondItem="QSA-pJ-QWv" secondAttribute="centerY" id="PQH-lO-Qou"/>
                             <constraint firstItem="FtZ-oB-2DN" firstAttribute="top" secondItem="ckb-LE-F9f" secondAttribute="bottom" constant="225" id="SwL-Cr-emq"/>
                             <constraint firstItem="ckb-LE-F9f" firstAttribute="top" secondItem="knL-ca-wS0" secondAttribute="bottom" id="YA3-KP-clQ"/>
                             <constraint firstItem="rfh-q5-aWI" firstAttribute="top" secondItem="vg0-Y2-pOs" secondAttribute="bottom" id="dJM-BS-pqD"/>
@@ -442,15 +444,17 @@
                                 <exclude reference="vg0-Y2-pOs"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="dJM-BS-pqD"/>
-                                <exclude reference="Guh-AB-eR5"/>
-                                <exclude reference="SwL-Cr-emq"/>
-                                <exclude reference="r2L-Vb-38e"/>
                                 <exclude reference="API-cW-trV"/>
                                 <exclude reference="P3b-uJ-Rn3"/>
                                 <exclude reference="YA3-KP-clQ"/>
+                                <exclude reference="4Qu-6b-QNC"/>
+                                <exclude reference="Guh-AB-eR5"/>
+                                <exclude reference="PQH-lO-Qou"/>
+                                <exclude reference="SwL-Cr-emq"/>
+                                <exclude reference="r2L-Vb-38e"/>
                                 <exclude reference="jAW-t4-kKa"/>
                                 <exclude reference="tZe-EQ-Sq4"/>
+                                <exclude reference="dJM-BS-pqD"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -460,15 +464,17 @@
                                 <include reference="vg0-Y2-pOs"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="dJM-BS-pqD"/>
-                                <include reference="Guh-AB-eR5"/>
-                                <include reference="SwL-Cr-emq"/>
-                                <include reference="r2L-Vb-38e"/>
                                 <include reference="API-cW-trV"/>
                                 <include reference="P3b-uJ-Rn3"/>
                                 <include reference="YA3-KP-clQ"/>
+                                <include reference="4Qu-6b-QNC"/>
+                                <exclude reference="Guh-AB-eR5"/>
+                                <include reference="PQH-lO-Qou"/>
+                                <exclude reference="SwL-Cr-emq"/>
+                                <exclude reference="r2L-Vb-38e"/>
                                 <include reference="jAW-t4-kKa"/>
                                 <include reference="tZe-EQ-Sq4"/>
+                                <include reference="dJM-BS-pqD"/>
                             </mask>
                         </variation>
                     </view>
@@ -868,10 +874,10 @@ Pronunciation 'Hanumān Jayantī'</string>
         <image name="whyareweborn-cropped" width="646" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Hx3-cB-zpU"/>
+        <segue reference="7LL-5h-qma"/>
+        <segue reference="4Zx-KJ-rkW"/>
         <segue reference="5tT-qQ-mmc"/>
-        <segue reference="3qz-3w-U4Y"/>
-        <segue reference="VMH-8v-Cb4"/>
+        <segue reference="yjH-eK-2R7"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.29989431181136694" green="0.98431372549999996" blue="0.13384291773843246" alpha="1" colorSpace="calibratedRGB"/>
 </document>
