@@ -16,6 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="pbJ-ba-hwG"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1a4-j8-Zvb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XI9-TW-qyt">
@@ -59,13 +60,13 @@
                                         <exclude reference="n60-VK-1Ny"/>
                                     </mask>
                                     <mask key="constraints">
-                                        <exclude reference="Hek-5s-BX8"/>
-                                        <exclude reference="PIC-zf-iag"/>
-                                        <exclude reference="fGI-fO-HeO"/>
                                         <exclude reference="2F6-fL-UxC"/>
                                         <exclude reference="4gh-fD-bF0"/>
                                         <exclude reference="fdd-rJ-Zuo"/>
                                         <exclude reference="w1x-Sa-bU7"/>
+                                        <exclude reference="Hek-5s-BX8"/>
+                                        <exclude reference="PIC-zf-iag"/>
+                                        <exclude reference="fGI-fO-HeO"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
@@ -74,13 +75,13 @@
                                         <include reference="n60-VK-1Ny"/>
                                     </mask>
                                     <mask key="constraints">
-                                        <include reference="Hek-5s-BX8"/>
-                                        <include reference="PIC-zf-iag"/>
-                                        <include reference="fGI-fO-HeO"/>
                                         <include reference="2F6-fL-UxC"/>
                                         <include reference="4gh-fD-bF0"/>
                                         <include reference="fdd-rJ-Zuo"/>
                                         <include reference="w1x-Sa-bU7"/>
+                                        <include reference="Hek-5s-BX8"/>
+                                        <include reference="PIC-zf-iag"/>
+                                        <include reference="fGI-fO-HeO"/>
                                     </mask>
                                 </variation>
                             </view>
