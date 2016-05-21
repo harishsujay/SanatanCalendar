@@ -14,31 +14,11 @@
 		412C90C81CBA4D7700B6E8AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 412C90C61CBA4D7700B6E8AA /* LaunchScreen.storyboard */; };
 		412C90D31CBA4D7700B6E8AA /* SanatanHinduCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C90D21CBA4D7700B6E8AA /* SanatanHinduCalendarTests.swift */; };
 		412C90DE1CBA4D7700B6E8AA /* SanatanHinduCalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C90DD1CBA4D7700B6E8AA /* SanatanHinduCalendarUITests.swift */; };
-		BA205C681CEF176E00936DEA /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA205C671CEF176E00936DEA /* CalendarViewController.swift */; };
-		BA205C6B1CEF193F00936DEA /* ViewController0.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA205C691CEF193F00936DEA /* ViewController0.swift */; };
-		BA205C6C1CEF193F00936DEA /* ViewController0.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA205C6A1CEF193F00936DEA /* ViewController0.xib */; };
-		BA205C731CEF197000936DEA /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA205C711CEF197000936DEA /* ViewController2.swift */; };
-		BA205C741CEF197000936DEA /* ViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA205C721CEF197000936DEA /* ViewController2.xib */; };
-		BA205C771CEF197C00936DEA /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA205C751CEF197C00936DEA /* ViewController3.swift */; };
-		BA205C781CEF197C00936DEA /* ViewController3.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA205C761CEF197C00936DEA /* ViewController3.xib */; };
-		BA205C7B1CEF211900936DEA /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA205C791CEF211900936DEA /* ViewController4.swift */; };
-		BA205C7C1CEF211900936DEA /* ViewController4.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA205C7A1CEF211900936DEA /* ViewController4.xib */; };
-		BA205C7F1CEF212600936DEA /* ViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA205C7D1CEF212600936DEA /* ViewController5.swift */; };
-		BA205C801CEF212600936DEA /* ViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA205C7E1CEF212600936DEA /* ViewController5.xib */; };
-		BA205C831CEF213300936DEA /* ViewController6.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA205C811CEF213300936DEA /* ViewController6.swift */; };
-		BA205C841CEF213300936DEA /* ViewController6.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA205C821CEF213300936DEA /* ViewController6.xib */; };
-		BA205C871CEF214100936DEA /* ViewController7.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA205C851CEF214100936DEA /* ViewController7.swift */; };
-		BA205C881CEF214100936DEA /* ViewController7.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA205C861CEF214100936DEA /* ViewController7.xib */; };
-		BA205C8B1CEF214D00936DEA /* ViewController8.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA205C891CEF214D00936DEA /* ViewController8.swift */; };
-		BA205C8C1CEF214D00936DEA /* ViewController8.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA205C8A1CEF214D00936DEA /* ViewController8.xib */; };
-		BA205C8F1CEF215D00936DEA /* ViewController9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA205C8D1CEF215D00936DEA /* ViewController9.swift */; };
-		BA205C901CEF215D00936DEA /* ViewController9.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA205C8E1CEF215D00936DEA /* ViewController9.xib */; };
-		BA205C931CEF216C00936DEA /* ViewController10.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA205C911CEF216C00936DEA /* ViewController10.swift */; };
-		BA205C941CEF216C00936DEA /* ViewController10.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA205C921CEF216C00936DEA /* ViewController10.xib */; };
-		BA205C971CEF218200936DEA /* ViewController11.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA205C951CEF218200936DEA /* ViewController11.swift */; };
-		BA205C981CEF218200936DEA /* ViewController11.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA205C961CEF218200936DEA /* ViewController11.xib */; };
-		BA205C9B1CEF2AFB00936DEA /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA205C991CEF2AFB00936DEA /* ViewController1.swift */; };
-		BA205C9C1CEF2AFB00936DEA /* ViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA205C9A1CEF2AFB00936DEA /* ViewController1.xib */; };
+		68990D511CEF07100002BC0C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68990D501CEF07100002BC0C /* Model.swift */; };
+		68990D531CEF071D0002BC0C /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68990D521CEF071D0002BC0C /* Event.swift */; };
+		68990D561CEF07F70002BC0C /* SanatanHinduCalendar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 68990D541CEF07F70002BC0C /* SanatanHinduCalendar.xcdatamodeld */; };
+		68990D581CEF20510002BC0C /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68990D571CEF20510002BC0C /* EventTableViewController.swift */; };
+		68990D5A1CEF30160002BC0C /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68990D591CEF30160002BC0C /* EventViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,31 +52,11 @@
 		412C90D91CBA4D7700B6E8AA /* SanatanHinduCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SanatanHinduCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		412C90DD1CBA4D7700B6E8AA /* SanatanHinduCalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanatanHinduCalendarUITests.swift; sourceTree = "<group>"; };
 		412C90DF1CBA4D7700B6E8AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA205C671CEF176E00936DEA /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
-		BA205C691CEF193F00936DEA /* ViewController0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController0.swift; sourceTree = "<group>"; };
-		BA205C6A1CEF193F00936DEA /* ViewController0.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController0.xib; sourceTree = "<group>"; };
-		BA205C711CEF197000936DEA /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
-		BA205C721CEF197000936DEA /* ViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController2.xib; sourceTree = "<group>"; };
-		BA205C751CEF197C00936DEA /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
-		BA205C761CEF197C00936DEA /* ViewController3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController3.xib; sourceTree = "<group>"; };
-		BA205C791CEF211900936DEA /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
-		BA205C7A1CEF211900936DEA /* ViewController4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController4.xib; sourceTree = "<group>"; };
-		BA205C7D1CEF212600936DEA /* ViewController5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController5.swift; sourceTree = "<group>"; };
-		BA205C7E1CEF212600936DEA /* ViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController5.xib; sourceTree = "<group>"; };
-		BA205C811CEF213300936DEA /* ViewController6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController6.swift; sourceTree = "<group>"; };
-		BA205C821CEF213300936DEA /* ViewController6.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController6.xib; sourceTree = "<group>"; };
-		BA205C851CEF214100936DEA /* ViewController7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController7.swift; sourceTree = "<group>"; };
-		BA205C861CEF214100936DEA /* ViewController7.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController7.xib; sourceTree = "<group>"; };
-		BA205C891CEF214D00936DEA /* ViewController8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController8.swift; sourceTree = "<group>"; };
-		BA205C8A1CEF214D00936DEA /* ViewController8.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController8.xib; sourceTree = "<group>"; };
-		BA205C8D1CEF215D00936DEA /* ViewController9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController9.swift; sourceTree = "<group>"; };
-		BA205C8E1CEF215D00936DEA /* ViewController9.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController9.xib; sourceTree = "<group>"; };
-		BA205C911CEF216C00936DEA /* ViewController10.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController10.swift; sourceTree = "<group>"; };
-		BA205C921CEF216C00936DEA /* ViewController10.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController10.xib; sourceTree = "<group>"; };
-		BA205C951CEF218200936DEA /* ViewController11.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController11.swift; sourceTree = "<group>"; };
-		BA205C961CEF218200936DEA /* ViewController11.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController11.xib; sourceTree = "<group>"; };
-		BA205C991CEF2AFB00936DEA /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
-		BA205C9A1CEF2AFB00936DEA /* ViewController1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController1.xib; sourceTree = "<group>"; };
+		68990D501CEF07100002BC0C /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		68990D521CEF071D0002BC0C /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		68990D551CEF07F70002BC0C /* SanatanHinduCalendar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SanatanHinduCalendar.xcdatamodel; sourceTree = "<group>"; };
+		68990D571CEF20510002BC0C /* EventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
+		68990D591CEF30160002BC0C /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,14 +107,12 @@
 		412C90BC1CBA4D7700B6E8AA /* SanatanHinduCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				412C90BD1CBA4D7700B6E8AA /* AppDelegate.swift */,
-				412C90BF1CBA4D7700B6E8AA /* ViewController.swift */,
-				BA205C9D1CEF3D2000936DEA /* calendar assets */,
-				412C90C11CBA4D7700B6E8AA /* Main.storyboard */,
-				412C90C41CBA4D7700B6E8AA /* Assets.xcassets */,
-				412C90C61CBA4D7700B6E8AA /* LaunchScreen.storyboard */,
+				68990D4D1CEF06450002BC0C /* Model */,
+				68990D4E1CEF064B0002BC0C /* View */,
+				68990D4C1CEF063C0002BC0C /* Controller */,
+				68990D4F1CEF06940002BC0C /* Assets */,
 				412C90C91CBA4D7700B6E8AA /* Info.plist */,
-				BA205C671CEF176E00936DEA /* CalendarViewController.swift */,
+				68990D541CEF07F70002BC0C /* SanatanHinduCalendar.xcdatamodeld */,
 			);
 			path = SanatanHinduCalendar;
 			sourceTree = "<group>";
@@ -177,35 +135,41 @@
 			path = SanatanHinduCalendarUITests;
 			sourceTree = "<group>";
 		};
-		BA205C9D1CEF3D2000936DEA /* calendar assets */ = {
+		68990D4C1CEF063C0002BC0C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BA205C991CEF2AFB00936DEA /* ViewController1.swift */,
-				BA205C9A1CEF2AFB00936DEA /* ViewController1.xib */,
-				BA205C951CEF218200936DEA /* ViewController11.swift */,
-				BA205C961CEF218200936DEA /* ViewController11.xib */,
-				BA205C911CEF216C00936DEA /* ViewController10.swift */,
-				BA205C921CEF216C00936DEA /* ViewController10.xib */,
-				BA205C8D1CEF215D00936DEA /* ViewController9.swift */,
-				BA205C8E1CEF215D00936DEA /* ViewController9.xib */,
-				BA205C891CEF214D00936DEA /* ViewController8.swift */,
-				BA205C8A1CEF214D00936DEA /* ViewController8.xib */,
-				BA205C851CEF214100936DEA /* ViewController7.swift */,
-				BA205C861CEF214100936DEA /* ViewController7.xib */,
-				BA205C811CEF213300936DEA /* ViewController6.swift */,
-				BA205C821CEF213300936DEA /* ViewController6.xib */,
-				BA205C7D1CEF212600936DEA /* ViewController5.swift */,
-				BA205C7E1CEF212600936DEA /* ViewController5.xib */,
-				BA205C791CEF211900936DEA /* ViewController4.swift */,
-				BA205C7A1CEF211900936DEA /* ViewController4.xib */,
-				BA205C751CEF197C00936DEA /* ViewController3.swift */,
-				BA205C761CEF197C00936DEA /* ViewController3.xib */,
-				BA205C711CEF197000936DEA /* ViewController2.swift */,
-				BA205C721CEF197000936DEA /* ViewController2.xib */,
-				BA205C691CEF193F00936DEA /* ViewController0.swift */,
-				BA205C6A1CEF193F00936DEA /* ViewController0.xib */,
+				412C90BF1CBA4D7700B6E8AA /* ViewController.swift */,
+				412C90BD1CBA4D7700B6E8AA /* AppDelegate.swift */,
+				68990D571CEF20510002BC0C /* EventTableViewController.swift */,
+				68990D591CEF30160002BC0C /* EventViewController.swift */,
 			);
-			name = "calendar assets";
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		68990D4D1CEF06450002BC0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				68990D501CEF07100002BC0C /* Model.swift */,
+				68990D521CEF071D0002BC0C /* Event.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		68990D4E1CEF064B0002BC0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				412C90C11CBA4D7700B6E8AA /* Main.storyboard */,
+				412C90C61CBA4D7700B6E8AA /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		68990D4F1CEF06940002BC0C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				412C90C41CBA4D7700B6E8AA /* Assets.xcassets */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,20 +277,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				412C90C81CBA4D7700B6E8AA /* LaunchScreen.storyboard in Resources */,
-				BA205C881CEF214100936DEA /* ViewController7.xib in Resources */,
-				BA205C841CEF213300936DEA /* ViewController6.xib in Resources */,
-				BA205C8C1CEF214D00936DEA /* ViewController8.xib in Resources */,
-				BA205C901CEF215D00936DEA /* ViewController9.xib in Resources */,
-				BA205C941CEF216C00936DEA /* ViewController10.xib in Resources */,
-				BA205C9C1CEF2AFB00936DEA /* ViewController1.xib in Resources */,
 				412C90C51CBA4D7700B6E8AA /* Assets.xcassets in Resources */,
-				BA205C981CEF218200936DEA /* ViewController11.xib in Resources */,
-				BA205C741CEF197000936DEA /* ViewController2.xib in Resources */,
 				412C90C31CBA4D7700B6E8AA /* Main.storyboard in Resources */,
-				BA205C781CEF197C00936DEA /* ViewController3.xib in Resources */,
-				BA205C801CEF212600936DEA /* ViewController5.xib in Resources */,
-				BA205C6C1CEF193F00936DEA /* ViewController0.xib in Resources */,
-				BA205C7C1CEF211900936DEA /* ViewController4.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,21 +303,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA205C681CEF176E00936DEA /* CalendarViewController.swift in Sources */,
-				BA205C931CEF216C00936DEA /* ViewController10.swift in Sources */,
 				412C90C01CBA4D7700B6E8AA /* ViewController.swift in Sources */,
-				BA205C831CEF213300936DEA /* ViewController6.swift in Sources */,
-				BA205C971CEF218200936DEA /* ViewController11.swift in Sources */,
-				BA205C7B1CEF211900936DEA /* ViewController4.swift in Sources */,
-				BA205C9B1CEF2AFB00936DEA /* ViewController1.swift in Sources */,
-				BA205C7F1CEF212600936DEA /* ViewController5.swift in Sources */,
+				68990D561CEF07F70002BC0C /* SanatanHinduCalendar.xcdatamodeld in Sources */,
+				68990D5A1CEF30160002BC0C /* EventViewController.swift in Sources */,
 				412C90BE1CBA4D7700B6E8AA /* AppDelegate.swift in Sources */,
-				BA205C871CEF214100936DEA /* ViewController7.swift in Sources */,
-				BA205C6B1CEF193F00936DEA /* ViewController0.swift in Sources */,
-				BA205C771CEF197C00936DEA /* ViewController3.swift in Sources */,
-				BA205C8F1CEF215D00936DEA /* ViewController9.swift in Sources */,
-				BA205C731CEF197000936DEA /* ViewController2.swift in Sources */,
-				BA205C8B1CEF214D00936DEA /* ViewController8.swift in Sources */,
+				68990D511CEF07100002BC0C /* Model.swift in Sources */,
+				68990D581CEF20510002BC0C /* EventTableViewController.swift in Sources */,
+				68990D531CEF071D0002BC0C /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,6 +557,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		68990D541CEF07F70002BC0C /* SanatanHinduCalendar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				68990D551CEF07F70002BC0C /* SanatanHinduCalendar.xcdatamodel */,
+			);
+			currentVersion = 68990D551CEF07F70002BC0C /* SanatanHinduCalendar.xcdatamodel */;
+			path = SanatanHinduCalendar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 412C90B21CBA4D7700B6E8AA /* Project object */;
 }

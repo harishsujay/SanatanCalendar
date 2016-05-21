@@ -7,124 +7,6 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Calendar Scroll View-->
-        <scene sceneID="aDa-eC-F1s">
-            <objects>
-                <viewController id="6Ox-tf-bIN" userLabel="Calendar Scroll View" customClass="CalendarViewController" customModule="SanatanHinduCalendar" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="9nQ-fr-XbJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="pbJ-ba-hwG"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="1a4-j8-Zvb">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XI9-TW-qyt">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXp-n4-cun">
-                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <color key="backgroundColor" red="0.71764705880000002" green="0.83921568629999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="Home">
-                                            <color key="titleColor" red="0.08235294118" green="0.13725490200000001" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="Vmr-jo-1HS"/>
-                                        </connections>
-                                    </button>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n60-VK-1Ny">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="6Ox-tf-bIN" id="kaK-fo-J5Z"/>
-                                        </connections>
-                                    </scrollView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.83529411760000005" green="0.92941176469999998" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="eXp-n4-cun" secondAttribute="bottom" id="2F6-fL-UxC"/>
-                                    <constraint firstItem="eXp-n4-cun" firstAttribute="leading" secondItem="XI9-TW-qyt" secondAttribute="leading" constant="50" id="4gh-fD-bF0">
-                                        <variation key="widthClass=compact" constant="20"/>
-                                    </constraint>
-                                    <constraint firstItem="n60-VK-1Ny" firstAttribute="centerX" secondItem="eXp-n4-cun" secondAttribute="centerX" id="Hek-5s-BX8"/>
-                                    <constraint firstItem="n60-VK-1Ny" firstAttribute="top" secondItem="XI9-TW-qyt" secondAttribute="top" id="PIC-zf-iag"/>
-                                    <constraint firstItem="n60-VK-1Ny" firstAttribute="leading" secondItem="XI9-TW-qyt" secondAttribute="leading" id="fGI-fO-HeO"/>
-                                    <constraint firstAttribute="trailing" secondItem="eXp-n4-cun" secondAttribute="trailing" constant="50" id="fdd-rJ-Zuo">
-                                        <variation key="widthClass=compact" constant="20"/>
-                                    </constraint>
-                                    <constraint firstItem="eXp-n4-cun" firstAttribute="top" secondItem="n60-VK-1Ny" secondAttribute="bottom" id="w1x-Sa-bU7"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="subviews">
-                                        <exclude reference="eXp-n4-cun"/>
-                                        <exclude reference="n60-VK-1Ny"/>
-                                    </mask>
-                                    <mask key="constraints">
-                                        <exclude reference="2F6-fL-UxC"/>
-                                        <exclude reference="4gh-fD-bF0"/>
-                                        <exclude reference="fdd-rJ-Zuo"/>
-                                        <exclude reference="w1x-Sa-bU7"/>
-                                        <exclude reference="Hek-5s-BX8"/>
-                                        <exclude reference="PIC-zf-iag"/>
-                                        <exclude reference="fGI-fO-HeO"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="subviews">
-                                        <include reference="eXp-n4-cun"/>
-                                        <include reference="n60-VK-1Ny"/>
-                                    </mask>
-                                    <mask key="constraints">
-                                        <include reference="2F6-fL-UxC"/>
-                                        <include reference="4gh-fD-bF0"/>
-                                        <include reference="fdd-rJ-Zuo"/>
-                                        <include reference="w1x-Sa-bU7"/>
-                                        <include reference="Hek-5s-BX8"/>
-                                        <include reference="PIC-zf-iag"/>
-                                        <include reference="fGI-fO-HeO"/>
-                                    </mask>
-                                </variation>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="XI9-TW-qyt" firstAttribute="leading" secondItem="1a4-j8-Zvb" secondAttribute="leading" id="VXJ-dk-MBr"/>
-                            <constraint firstAttribute="trailing" secondItem="XI9-TW-qyt" secondAttribute="trailing" id="dFl-hl-5uC"/>
-                            <constraint firstItem="XI9-TW-qyt" firstAttribute="bottom" secondItem="pbJ-ba-hwG" secondAttribute="top" id="vmz-Wc-SqI"/>
-                            <constraint firstItem="XI9-TW-qyt" firstAttribute="top" secondItem="1a4-j8-Zvb" secondAttribute="top" id="zGF-aT-NHQ"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="XI9-TW-qyt"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="VXJ-dk-MBr"/>
-                                <exclude reference="dFl-hl-5uC"/>
-                                <exclude reference="vmz-Wc-SqI"/>
-                                <exclude reference="zGF-aT-NHQ"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="XI9-TW-qyt"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="VXJ-dk-MBr"/>
-                                <include reference="dFl-hl-5uC"/>
-                                <include reference="vmz-Wc-SqI"/>
-                                <include reference="zGF-aT-NHQ"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <connections>
-                        <outlet property="scrollView" destination="n60-VK-1Ny" id="ASf-UP-55w"/>
-                        <outlet property="viewScroll" destination="XI9-TW-qyt" id="icn-xq-1Si"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bSp-5l-2vk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-589.5" y="-2137"/>
-        </scene>
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -168,7 +50,7 @@
                                                 </constraints>
                                                 <state key="normal" image="calendar"/>
                                                 <connections>
-                                                    <segue destination="6Ox-tf-bIN" kind="show" id="mHk-de-tia"/>
+                                                    <segue destination="7mb-29-CMY" kind="show" id="PV7-dU-wJM"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKf-TT-6TN">
@@ -180,7 +62,7 @@
                                                 </constraints>
                                                 <state key="normal" image="muhurt"/>
                                                 <connections>
-                                                    <segue destination="7mb-29-CMY" kind="show" id="Cpi-Vh-pDm"/>
+                                                    <segue destination="hzi-2d-IZe" kind="show" id="o7e-iA-vxu"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -236,6 +118,9 @@
                                                     <constraint firstAttribute="height" constant="111" id="RPE-Ea-jy8"/>
                                                 </constraints>
                                                 <state key="normal" image="idealroutine"/>
+                                                <connections>
+                                                    <segue destination="7mb-29-CMY" kind="show" id="ueA-5q-X4i"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -266,7 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1751" y="-2155"/>
+            <point key="canvasLocation" x="-851" y="-2137"/>
         </scene>
         <!--Coming Soon-->
         <scene sceneID="FX1-XF-ao4">
@@ -286,15 +171,6 @@
                                 <color key="textColor" red="0.086274509803921567" green="0.13725490196078433" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckb-LE-F9f">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.086274509803921567" green="0.13725490196078433" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Sanatan Almanac 2016" id="TfA-g0-sie"/>
-                                </items>
-                            </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vg0-Y2-pOs">
                                 <rect key="frame" x="20" y="570" width="560" height="30"/>
                                 <color key="backgroundColor" red="0.76312921869999994" green="0.87515274570000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -307,6 +183,15 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="Boh-iU-EOI"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckb-LE-F9f">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.086274509803921567" green="0.13725490196078433" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Sanatan Almanac 2016" id="TfA-g0-sie"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.86274509803921573" green="0.94509803921568625" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -323,8 +208,8 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="FtZ-oB-2DN"/>
-                                <exclude reference="ckb-LE-F9f"/>
                                 <exclude reference="vg0-Y2-pOs"/>
+                                <exclude reference="ckb-LE-F9f"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="dJM-BS-pqD"/>
@@ -341,8 +226,8 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="FtZ-oB-2DN"/>
-                                <include reference="ckb-LE-F9f"/>
                                 <include reference="vg0-Y2-pOs"/>
+                                <include reference="ckb-LE-F9f"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="dJM-BS-pqD"/>
@@ -400,7 +285,7 @@
                                     <color key="textColor" red="0.08235294118" green="0.13725490200000001" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Sadhana - Spiritual Practice" id="eGN-68-6te"/>
+                                    <navigationItem title="Sanatan Almanac 2016" id="eGN-68-6te"/>
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOR-BZ-Tjy">
@@ -428,11 +313,11 @@
                             <constraint firstItem="YOR-BZ-Tjy" firstAttribute="top" secondItem="67Z-UQ-1kR" secondAttribute="bottom" constant="10" id="y7s-0o-e8N"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Festivals" id="Coy-nM-tV5"/>
+                    <navigationItem key="navigationItem" title="Sadhana" id="Coy-nM-tV5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgk-hQ-Uwn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1206" y="-1182"/>
+            <point key="canvasLocation" x="-851" y="-1296"/>
         </scene>
         <!--How to be happy-->
         <scene sceneID="jtY-6m-gLV">
@@ -499,7 +384,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Seg-3P-NzD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-37" y="-1182"/>
+            <point key="canvasLocation" x="85" y="-1290"/>
         </scene>
         <!--Festivals-->
         <scene sceneID="Yda-0t-iL1">
@@ -522,7 +407,7 @@
                                     <color key="textColor" red="0.10980392160000001" green="0.20392156859999999" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Festivals" id="Ohx-NR-ccY"/>
+                                    <navigationItem title="Sanatan Almanac 2016" id="Ohx-NR-ccY"/>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ramnavami" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMZ-S4-BTo">
@@ -650,11 +535,11 @@ Pronunciation 'Hanumān Jayantī'</string>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="tnE-Sg-FVf"/>
+                    <navigationItem key="navigationItem" title="Festivals" id="tnE-Sg-FVf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dy2-iM-FCf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-960" y="-3162"/>
+            <point key="canvasLocation" x="-851" y="-3044"/>
         </scene>
         <!--Ramnavmi-->
         <scene sceneID="JeE-sI-n83">
@@ -740,7 +625,139 @@ Pronunciation 'Hanumān Jayantī'</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uQF-gi-1e9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="85.5" y="-3162"/>
+            <point key="canvasLocation" x="79" y="-3044"/>
+        </scene>
+        <!--Event view-->
+        <scene sceneID="0HV-Xf-48v">
+            <objects>
+                <viewController id="6J0-dF-zTY" userLabel="Event view" customClass="EventViewController" customModule="SanatanHinduCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RRe-1M-LiE"/>
+                        <viewControllerLayoutGuide type="bottom" id="hYq-lU-kDu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hfh-YZ-GT1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="33A-kJ-MXS">
+                                <rect key="frame" x="20" y="78" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Place" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x7e-5k-V8q" userLabel="Place">
+                                <rect key="frame" x="20" y="116" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mtd-19-Wtu">
+                                <rect key="frame" x="20" y="154" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2d-Wu-lps">
+                                <rect key="frame" x="20" y="192" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="save:" destination="6J0-dF-zTY" eventType="touchUpInside" id="rCl-2k-sBj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="33A-kJ-MXS" secondAttribute="leading" id="0VG-QE-Ni9"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="V2d-Wu-lps" secondAttribute="leading" id="10x-WV-38F"/>
+                            <constraint firstItem="x7e-5k-V8q" firstAttribute="top" secondItem="33A-kJ-MXS" secondAttribute="bottom" constant="8" id="44Y-db-AnY"/>
+                            <constraint firstItem="Mtd-19-Wtu" firstAttribute="top" secondItem="x7e-5k-V8q" secondAttribute="bottom" constant="8" id="8Zr-0B-q6R"/>
+                            <constraint firstItem="V2d-Wu-lps" firstAttribute="top" secondItem="Mtd-19-Wtu" secondAttribute="bottom" constant="8" id="D4j-c0-g0q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mtd-19-Wtu" secondAttribute="trailing" id="Fab-vO-5iP"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="x7e-5k-V8q" secondAttribute="leading" id="N7H-PZ-sI3"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Mtd-19-Wtu" secondAttribute="leading" id="Phl-gd-7bP"/>
+                            <constraint firstItem="33A-kJ-MXS" firstAttribute="top" secondItem="RRe-1M-LiE" secondAttribute="bottom" constant="14" id="Xnz-7B-dft"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="33A-kJ-MXS" secondAttribute="trailing" id="fwD-He-w3i"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="x7e-5k-V8q" secondAttribute="trailing" id="oNF-Xz-mVd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="desc" destination="Mtd-19-Wtu" id="Ixn-e0-H95"/>
+                        <outlet property="name" destination="33A-kJ-MXS" id="cpf-al-mzb"/>
+                        <outlet property="place" destination="x7e-5k-V8q" id="Fdy-F7-7hZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LiQ-SS-gQ1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1588" y="-3044"/>
+        </scene>
+        <!--Events-->
+        <scene sceneID="8Gg-nm-MPQ">
+            <objects>
+                <tableViewController title="Events" extendedLayoutIncludesOpaqueBars="YES" id="Vof-8T-PD3" customClass="EventTableViewController" customModule="SanatanHinduCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="vGd-kl-hb9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="FYY-DK-3xw" detailTextLabel="GcH-FM-V1L" style="IBUITableViewCellStyleSubtitle" id="4Dn-Nw-Gq0">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Dn-Nw-Gq0" id="V3Z-8u-sLz">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FYY-DK-3xw">
+                                            <rect key="frame" x="15" y="6" width="31.5" height="19.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GcH-FM-V1L">
+                                            <rect key="frame" x="15" y="25.5" width="40.5" height="13.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Vof-8T-PD3" id="dKS-Rs-mgD"/>
+                            <outlet property="delegate" destination="Vof-8T-PD3" id="3Gq-W4-RQH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Events" id="bfE-aJ-jTs">
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="fPt-zY-vtN">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="0xH-Bq-hZm"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="iLz-S7-pQO">
+                            <connections>
+                                <segue destination="6J0-dF-zTY" kind="show" id="GNb-oJ-sx7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kmP-BG-feK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2294" y="-3044"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HlX-tQ-Ynb">
+            <objects>
+                <navigationController id="hzi-2d-IZe" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="irv-EG-lL5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Vof-8T-PD3" kind="relationship" relationship="rootViewController" id="HgS-pw-xXd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cQA-BN-Au8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1896" y="-2280"/>
         </scene>
     </scenes>
     <resources>
@@ -756,9 +773,9 @@ Pronunciation 'Hanumān Jayantī'</string>
         <image name="whyareweborn-cropped" width="646" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uFQ-lw-i7N"/>
-        <segue reference="Vmr-jo-1HS"/>
-        <segue reference="TrN-M4-KNz"/>
+        <segue reference="vvy-s3-hyS"/>
         <segue reference="FKe-1R-12B"/>
+        <segue reference="Ero-ld-gFx"/>
+        <segue reference="uFQ-lw-i7N"/>
     </inferredMetricsTieBreakers>
 </document>
