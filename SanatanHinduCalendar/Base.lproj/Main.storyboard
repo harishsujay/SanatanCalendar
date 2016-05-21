@@ -272,7 +272,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Events Map" id="jfb-ef-fqD">
-                        <barButtonItem key="backBarButtonItem" title="Create Events" id="gPP-UT-ALb"/>
+                        <barButtonItem key="leftBarButtonItem" title="Add Location" id="gPP-UT-ALb">
+                            <connections>
+                                <segue destination="6J0-dF-zTY" kind="show" id="lIR-nv-BNe"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="1Wq-SL-b3k" id="W6W-O8-Xhs"/>
@@ -684,11 +688,6 @@ Pronunciation 'Hanumān Jayantī'</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mtd-19-Wtu">
-                                <rect key="frame" x="20" y="154" width="560" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2d-Wu-lps">
                                 <rect key="frame" x="20" y="192" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
@@ -696,13 +695,18 @@ Pronunciation 'Hanumān Jayantī'</string>
                                     <action selector="save:" destination="6J0-dF-zTY" eventType="touchUpInside" id="rCl-2k-sBj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgq-p8-XRq">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgq-p8-XRq">
                                 <rect key="frame" x="134" y="192" width="79" height="30"/>
                                 <state key="normal" title="Open Maps"/>
                                 <connections>
                                     <segue destination="4Sx-6d-1MO" kind="show" id="gky-DH-iwL"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mtd-19-Wtu">
+                                <rect key="frame" x="20" y="154" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -835,9 +839,10 @@ Pronunciation 'Hanumān Jayantī'</string>
         <image name="whyareweborn-cropped" width="646" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vvy-s3-hyS"/>
-        <segue reference="FKe-1R-12B"/>
         <segue reference="Ero-ld-gFx"/>
+        <segue reference="FKe-1R-12B"/>
+        <segue reference="vvy-s3-hyS"/>
         <segue reference="uFQ-lw-i7N"/>
+        <segue reference="lIR-nv-BNe"/>
     </inferredMetricsTieBreakers>
 </document>

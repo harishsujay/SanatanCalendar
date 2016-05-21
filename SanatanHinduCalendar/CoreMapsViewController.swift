@@ -32,6 +32,7 @@ class CoreMapsViewController: UIViewController, MKMapViewDelegate, CLLocationMan
         let dropPin = MKPointAnnotation()
         dropPin.coordinate = rmitLocation
         dropPin.title = "RMIT University"
+        dropPin.subtitle = "School of Science"
         mapView.addAnnotation(dropPin)
         
         let regionRadius: CLLocationDistance = 1000
