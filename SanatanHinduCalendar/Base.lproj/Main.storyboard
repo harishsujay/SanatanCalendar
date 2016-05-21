@@ -118,6 +118,9 @@
                                                     <constraint firstAttribute="height" constant="111" id="RPE-Ea-jy8"/>
                                                 </constraints>
                                                 <state key="normal" image="idealroutine"/>
+                                                <connections>
+                                                    <segue destination="7mb-29-CMY" kind="show" id="ueA-5q-X4i"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -282,7 +285,7 @@
                                     <color key="textColor" red="0.08235294118" green="0.13725490200000001" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Sadhana - Spiritual Practice" id="eGN-68-6te"/>
+                                    <navigationItem title="Sanatan Almanac 2016" id="eGN-68-6te"/>
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOR-BZ-Tjy">
@@ -310,7 +313,7 @@
                             <constraint firstItem="YOR-BZ-Tjy" firstAttribute="top" secondItem="67Z-UQ-1kR" secondAttribute="bottom" constant="10" id="y7s-0o-e8N"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Festivals" id="Coy-nM-tV5"/>
+                    <navigationItem key="navigationItem" title="Sadhana" id="Coy-nM-tV5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgk-hQ-Uwn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -404,7 +407,7 @@
                                     <color key="textColor" red="0.10980392160000001" green="0.20392156859999999" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Festivals" id="Ohx-NR-ccY"/>
+                                    <navigationItem title="Sanatan Almanac 2016" id="Ohx-NR-ccY"/>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ramnavami" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMZ-S4-BTo">
@@ -532,7 +535,7 @@ Pronunciation 'Hanumān Jayantī'</string>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="tnE-Sg-FVf"/>
+                    <navigationItem key="navigationItem" title="Festivals" id="tnE-Sg-FVf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dy2-iM-FCf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -624,10 +627,10 @@ Pronunciation 'Hanumān Jayantī'</string>
             </objects>
             <point key="canvasLocation" x="79" y="-3044"/>
         </scene>
-        <!--Event View Controller-->
+        <!--Event view-->
         <scene sceneID="0HV-Xf-48v">
             <objects>
-                <viewController id="6J0-dF-zTY" customClass="EventViewController" customModule="SanatanHinduCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6J0-dF-zTY" userLabel="Event view" customClass="EventViewController" customModule="SanatanHinduCalendar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RRe-1M-LiE"/>
                         <viewControllerLayoutGuide type="bottom" id="hYq-lU-kDu"/>
@@ -684,11 +687,10 @@ Pronunciation 'Hanumān Jayantī'</string>
             </objects>
             <point key="canvasLocation" x="-1588" y="-3044"/>
         </scene>
-        <!--Title-->
+        <!--Events-->
         <scene sceneID="8Gg-nm-MPQ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kmP-BG-feK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="Vof-8T-PD3" customClass="EventTableViewController" customModule="SanatanHinduCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Events" extendedLayoutIncludesOpaqueBars="YES" id="Vof-8T-PD3" customClass="EventTableViewController" customModule="SanatanHinduCalendar" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="vGd-kl-hb9">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -724,7 +726,12 @@ Pronunciation 'Hanumān Jayantī'</string>
                             <outlet property="delegate" destination="Vof-8T-PD3" id="3Gq-W4-RQH"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Title" id="bfE-aJ-jTs">
+                    <navigationItem key="navigationItem" title="Events" id="bfE-aJ-jTs">
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="fPt-zY-vtN">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="0xH-Bq-hZm"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="iLz-S7-pQO">
                             <connections>
                                 <segue destination="6J0-dF-zTY" kind="show" id="GNb-oJ-sx7"/>
@@ -732,13 +739,13 @@ Pronunciation 'Hanumān Jayantī'</string>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kmP-BG-feK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2294" y="-3044"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HlX-tQ-Ynb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cQA-BN-Au8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="hzi-2d-IZe" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="irv-EG-lL5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -748,6 +755,7 @@ Pronunciation 'Hanumān Jayantī'</string>
                         <segue destination="Vof-8T-PD3" kind="relationship" relationship="rootViewController" id="HgS-pw-xXd"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cQA-BN-Au8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1896" y="-2280"/>
         </scene>
@@ -765,9 +773,9 @@ Pronunciation 'Hanumān Jayantī'</string>
         <image name="whyareweborn-cropped" width="646" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="vvy-s3-hyS"/>
         <segue reference="FKe-1R-12B"/>
-        <segue reference="gU9-YQ-kL0"/>
+        <segue reference="Ero-ld-gFx"/>
         <segue reference="uFQ-lw-i7N"/>
-        <segue reference="TrN-M4-KNz"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -12,6 +12,10 @@ import UIKit
 
 class EventTableViewController: UITableViewController {
 
+    //@IBOutlet weak var Home: UINavigationItem!
+    
+    //var backBarButtonItem: UIBarButtonItem?
+    
     var model:Model = Model.sharedInstance
     
     // MARK: - Prepare data for display
