@@ -19,8 +19,7 @@ class Model {
     
     func saveEvent(name: String, place:String, desc:String)
     {
-        let appDelegate =
-        UIApplication.sharedApplication().delegate as! AppDelegate
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         
         
         
