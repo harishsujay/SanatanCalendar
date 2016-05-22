@@ -325,6 +325,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAM-k0-tM1">
                                 <rect key="frame" x="20" y="70" width="105" height="125"/>
                                 <accessibility key="accessibilityConfiguration" identifier="ramnavami"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="kQM-tj-mIf"/>
+                                    <constraint firstAttribute="height" constant="125" id="zAm-aq-dsd"/>
+                                </constraints>
                                 <state key="normal" image="ramnavmi"/>
                                 <connections>
                                     <segue destination="4rv-za-alp" kind="show" id="f8p-r8-8iq"/>
