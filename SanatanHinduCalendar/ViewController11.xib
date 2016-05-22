@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController11" customModule="SanatanHinduCalendar" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dec" translatesAutoresizingMaskIntoConstraints="NO" id="97w-Ck-UGB">
+                    <rect key="frame" x="10" y="20" width="355" height="575"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="575" id="ewz-O5-1Pl"/>
+                        <constraint firstAttribute="width" constant="355" id="gbI-Ru-nbA"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.83529411760000005" green="0.92941176469999998" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="97w-Ck-UGB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="ETB-9K-yqg"/>
+                <constraint firstItem="97w-Ck-UGB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="kEl-Xo-tVe"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="dec" width="1000" height="1614"/>
+    </resources>
+</document>
