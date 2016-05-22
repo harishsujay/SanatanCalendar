@@ -15,20 +15,19 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="apr" translatesAutoresizingMaskIntoConstraints="NO" id="JkY-QK-xAr">
-                    <rect key="frame" x="18" y="8" width="355" height="575"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apr" translatesAutoresizingMaskIntoConstraints="NO" id="NDc-yO-hfl">
+                    <rect key="frame" x="10" y="20" width="355" height="575"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="575" id="8dh-Fv-kyv"/>
-                        <constraint firstAttribute="width" constant="355" id="uck-nD-VCh"/>
+                        <constraint firstAttribute="height" constant="575" id="XKi-du-8SD"/>
+                        <constraint firstAttribute="width" constant="355" id="vWV-su-h9d"/>
                     </constraints>
                 </imageView>
             </subviews>
-            <color key="backgroundColor" red="0.83529411760000005" green="0.92941176469999998" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.83137254900000002" green="0.93333333330000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="JkY-QK-xAr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="DzA-PF-auN"/>
-                <constraint firstItem="JkY-QK-xAr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="gLR-gw-lxx"/>
+                <constraint firstItem="NDc-yO-hfl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="iMv-3Y-0o1"/>
+                <constraint firstItem="NDc-yO-hfl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="sZP-Qg-aJa"/>
             </constraints>
-            <point key="canvasLocation" x="340" y="443"/>
         </view>
     </objects>
     <resources>

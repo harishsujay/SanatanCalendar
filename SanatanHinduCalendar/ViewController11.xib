@@ -15,19 +15,25 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dec" translatesAutoresizingMaskIntoConstraints="NO" id="97w-Ck-UGB">
-                    <rect key="frame" x="10" y="20" width="355" height="575"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dec" translatesAutoresizingMaskIntoConstraints="NO" id="rcN-5P-erp">
+                    <rect key="frame" x="2" y="20" width="355" height="575"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="575" id="ewz-O5-1Pl"/>
-                        <constraint firstAttribute="width" constant="355" id="gbI-Ru-nbA"/>
+                        <constraint firstAttribute="height" constant="575" id="EtA-9j-ZB6"/>
+                        <constraint firstAttribute="width" constant="355" id="oTR-rs-Mze"/>
                     </constraints>
                 </imageView>
             </subviews>
-            <color key="backgroundColor" red="0.83529411760000005" green="0.92941176469999998" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.83137254900000002" green="0.93333333330000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="97w-Ck-UGB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="ETB-9K-yqg"/>
-                <constraint firstItem="97w-Ck-UGB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="kEl-Xo-tVe"/>
+                <constraint firstAttribute="trailing" secondItem="rcN-5P-erp" secondAttribute="trailing" constant="5" id="6rH-MQ-N4l"/>
+                <constraint firstItem="rcN-5P-erp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="2" id="nZU-Bl-1VB"/>
+                <constraint firstItem="rcN-5P-erp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="zsz-JQ-4rE"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="6rH-MQ-N4l"/>
+                </mask>
+            </variation>
         </view>
     </objects>
     <resources>

@@ -25,6 +25,31 @@
 		68990D621CF060BF0002BC0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68990D611CF060BF0002BC0C /* Foundation.framework */; };
 		68990D641CF060CA0002BC0C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68990D631CF060CA0002BC0C /* CoreGraphics.framework */; };
 		68990D661CF066670002BC0C /* CoreMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68990D651CF066670002BC0C /* CoreMapsViewController.swift */; };
+		BA3F22201CF167810011729F /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3F221F1CF167810011729F /* CalendarViewController.swift */; };
+		BA3F22231CF16BE00011729F /* ViewController0.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3F22211CF16BE00011729F /* ViewController0.swift */; };
+		BA3F22241CF16BE00011729F /* ViewController0.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3F22221CF16BE00011729F /* ViewController0.xib */; };
+		BA3F22271CF16BF50011729F /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3F22251CF16BF50011729F /* ViewController1.swift */; };
+		BA3F22281CF16BF50011729F /* ViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3F22261CF16BF50011729F /* ViewController1.xib */; };
+		BA3F222B1CF16C030011729F /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3F22291CF16C030011729F /* ViewController2.swift */; };
+		BA3F222C1CF16C030011729F /* ViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3F222A1CF16C030011729F /* ViewController2.xib */; };
+		BA3F222F1CF16C100011729F /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3F222D1CF16C100011729F /* ViewController3.swift */; };
+		BA3F22301CF16C100011729F /* ViewController3.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3F222E1CF16C100011729F /* ViewController3.xib */; };
+		BA3F22331CF16C1E0011729F /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3F22311CF16C1E0011729F /* ViewController4.swift */; };
+		BA3F22341CF16C1E0011729F /* ViewController4.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3F22321CF16C1E0011729F /* ViewController4.xib */; };
+		BA3F22371CF16C290011729F /* ViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3F22351CF16C290011729F /* ViewController5.swift */; };
+		BA3F22381CF16C290011729F /* ViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3F22361CF16C290011729F /* ViewController5.xib */; };
+		BA3F223B1CF16C330011729F /* ViewController6.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3F22391CF16C330011729F /* ViewController6.swift */; };
+		BA3F223C1CF16C330011729F /* ViewController6.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3F223A1CF16C330011729F /* ViewController6.xib */; };
+		BA3F223F1CF16C3C0011729F /* ViewController7.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3F223D1CF16C3C0011729F /* ViewController7.swift */; };
+		BA3F22401CF16C3C0011729F /* ViewController7.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3F223E1CF16C3C0011729F /* ViewController7.xib */; };
+		BA3F22431CF16C450011729F /* ViewController8.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3F22411CF16C450011729F /* ViewController8.swift */; };
+		BA3F22441CF16C450011729F /* ViewController8.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3F22421CF16C450011729F /* ViewController8.xib */; };
+		BA3F22471CF16C4F0011729F /* ViewController9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3F22451CF16C4F0011729F /* ViewController9.swift */; };
+		BA3F22481CF16C4F0011729F /* ViewController9.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3F22461CF16C4F0011729F /* ViewController9.xib */; };
+		BA3F224B1CF16C5C0011729F /* ViewController10.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3F22491CF16C5C0011729F /* ViewController10.swift */; };
+		BA3F224C1CF16C5C0011729F /* ViewController10.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3F224A1CF16C5C0011729F /* ViewController10.xib */; };
+		BA3F224F1CF16C6A0011729F /* ViewController11.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3F224D1CF16C6A0011729F /* ViewController11.swift */; };
+		BA3F22501CF16C6A0011729F /* ViewController11.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3F224E1CF16C6A0011729F /* ViewController11.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +94,31 @@
 		68990D611CF060BF0002BC0C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		68990D631CF060CA0002BC0C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		68990D651CF066670002BC0C /* CoreMapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreMapsViewController.swift; sourceTree = "<group>"; };
+		BA3F221F1CF167810011729F /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		BA3F22211CF16BE00011729F /* ViewController0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController0.swift; sourceTree = "<group>"; };
+		BA3F22221CF16BE00011729F /* ViewController0.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController0.xib; sourceTree = "<group>"; };
+		BA3F22251CF16BF50011729F /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
+		BA3F22261CF16BF50011729F /* ViewController1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController1.xib; sourceTree = "<group>"; };
+		BA3F22291CF16C030011729F /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		BA3F222A1CF16C030011729F /* ViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController2.xib; sourceTree = "<group>"; };
+		BA3F222D1CF16C100011729F /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		BA3F222E1CF16C100011729F /* ViewController3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController3.xib; sourceTree = "<group>"; };
+		BA3F22311CF16C1E0011729F /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
+		BA3F22321CF16C1E0011729F /* ViewController4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController4.xib; sourceTree = "<group>"; };
+		BA3F22351CF16C290011729F /* ViewController5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController5.swift; sourceTree = "<group>"; };
+		BA3F22361CF16C290011729F /* ViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController5.xib; sourceTree = "<group>"; };
+		BA3F22391CF16C330011729F /* ViewController6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController6.swift; sourceTree = "<group>"; };
+		BA3F223A1CF16C330011729F /* ViewController6.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController6.xib; sourceTree = "<group>"; };
+		BA3F223D1CF16C3C0011729F /* ViewController7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController7.swift; sourceTree = "<group>"; };
+		BA3F223E1CF16C3C0011729F /* ViewController7.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController7.xib; sourceTree = "<group>"; };
+		BA3F22411CF16C450011729F /* ViewController8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController8.swift; sourceTree = "<group>"; };
+		BA3F22421CF16C450011729F /* ViewController8.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController8.xib; sourceTree = "<group>"; };
+		BA3F22451CF16C4F0011729F /* ViewController9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController9.swift; sourceTree = "<group>"; };
+		BA3F22461CF16C4F0011729F /* ViewController9.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController9.xib; sourceTree = "<group>"; };
+		BA3F22491CF16C5C0011729F /* ViewController10.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController10.swift; sourceTree = "<group>"; };
+		BA3F224A1CF16C5C0011729F /* ViewController10.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController10.xib; sourceTree = "<group>"; };
+		BA3F224D1CF16C6A0011729F /* ViewController11.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController11.swift; sourceTree = "<group>"; };
+		BA3F224E1CF16C6A0011729F /* ViewController11.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController11.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,9 +212,34 @@
 			children = (
 				412C90BF1CBA4D7700B6E8AA /* ViewController.swift */,
 				412C90BD1CBA4D7700B6E8AA /* AppDelegate.swift */,
+				BA3F22291CF16C030011729F /* ViewController2.swift */,
+				BA3F222A1CF16C030011729F /* ViewController2.xib */,
+				BA3F222D1CF16C100011729F /* ViewController3.swift */,
+				BA3F222E1CF16C100011729F /* ViewController3.xib */,
+				BA3F22311CF16C1E0011729F /* ViewController4.swift */,
+				BA3F22321CF16C1E0011729F /* ViewController4.xib */,
+				BA3F22351CF16C290011729F /* ViewController5.swift */,
+				BA3F22361CF16C290011729F /* ViewController5.xib */,
+				BA3F22391CF16C330011729F /* ViewController6.swift */,
+				BA3F223A1CF16C330011729F /* ViewController6.xib */,
+				BA3F223D1CF16C3C0011729F /* ViewController7.swift */,
+				BA3F223E1CF16C3C0011729F /* ViewController7.xib */,
+				BA3F22411CF16C450011729F /* ViewController8.swift */,
+				BA3F22421CF16C450011729F /* ViewController8.xib */,
+				BA3F22451CF16C4F0011729F /* ViewController9.swift */,
+				BA3F22461CF16C4F0011729F /* ViewController9.xib */,
+				BA3F22491CF16C5C0011729F /* ViewController10.swift */,
+				BA3F224A1CF16C5C0011729F /* ViewController10.xib */,
+				BA3F224D1CF16C6A0011729F /* ViewController11.swift */,
+				BA3F224E1CF16C6A0011729F /* ViewController11.xib */,
 				68990D571CEF20510002BC0C /* EventTableViewController.swift */,
 				68990D591CEF30160002BC0C /* EventViewController.swift */,
+				BA3F22251CF16BF50011729F /* ViewController1.swift */,
+				BA3F22261CF16BF50011729F /* ViewController1.xib */,
+				BA3F221F1CF167810011729F /* CalendarViewController.swift */,
 				68990D651CF066670002BC0C /* CoreMapsViewController.swift */,
+				BA3F22211CF16BE00011729F /* ViewController0.swift */,
+				BA3F22221CF16BE00011729F /* ViewController0.xib */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -300,8 +375,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				412C90C81CBA4D7700B6E8AA /* LaunchScreen.storyboard in Resources */,
+				BA3F22401CF16C3C0011729F /* ViewController7.xib in Resources */,
+				BA3F223C1CF16C330011729F /* ViewController6.xib in Resources */,
+				BA3F22441CF16C450011729F /* ViewController8.xib in Resources */,
+				BA3F22481CF16C4F0011729F /* ViewController9.xib in Resources */,
+				BA3F224C1CF16C5C0011729F /* ViewController10.xib in Resources */,
+				BA3F22281CF16BF50011729F /* ViewController1.xib in Resources */,
 				412C90C51CBA4D7700B6E8AA /* Assets.xcassets in Resources */,
+				BA3F22501CF16C6A0011729F /* ViewController11.xib in Resources */,
+				BA3F222C1CF16C030011729F /* ViewController2.xib in Resources */,
 				412C90C31CBA4D7700B6E8AA /* Main.storyboard in Resources */,
+				BA3F22301CF16C100011729F /* ViewController3.xib in Resources */,
+				BA3F22381CF16C290011729F /* ViewController5.xib in Resources */,
+				BA3F22241CF16BE00011729F /* ViewController0.xib in Resources */,
+				BA3F22341CF16C1E0011729F /* ViewController4.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,14 +413,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA3F222F1CF16C100011729F /* ViewController3.swift in Sources */,
+				BA3F224B1CF16C5C0011729F /* ViewController10.swift in Sources */,
+				BA3F22331CF16C1E0011729F /* ViewController4.swift in Sources */,
 				68990D661CF066670002BC0C /* CoreMapsViewController.swift in Sources */,
+				BA3F22231CF16BE00011729F /* ViewController0.swift in Sources */,
+				BA3F22371CF16C290011729F /* ViewController5.swift in Sources */,
+				BA3F223B1CF16C330011729F /* ViewController6.swift in Sources */,
+				BA3F22271CF16BF50011729F /* ViewController1.swift in Sources */,
 				412C90C01CBA4D7700B6E8AA /* ViewController.swift in Sources */,
 				68990D561CEF07F70002BC0C /* SanatanHinduCalendar.xcdatamodeld in Sources */,
+				BA3F222B1CF16C030011729F /* ViewController2.swift in Sources */,
 				68990D5A1CEF30160002BC0C /* EventViewController.swift in Sources */,
 				412C90BE1CBA4D7700B6E8AA /* AppDelegate.swift in Sources */,
 				68990D511CEF07100002BC0C /* Model.swift in Sources */,
+				BA3F22201CF167810011729F /* CalendarViewController.swift in Sources */,
 				68990D581CEF20510002BC0C /* EventTableViewController.swift in Sources */,
 				68990D531CEF071D0002BC0C /* Event.swift in Sources */,
+				BA3F224F1CF16C6A0011729F /* ViewController11.swift in Sources */,
+				BA3F22471CF16C4F0011729F /* ViewController9.swift in Sources */,
+				BA3F223F1CF16C3C0011729F /* ViewController7.swift in Sources */,
+				BA3F22431CF16C450011729F /* ViewController8.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

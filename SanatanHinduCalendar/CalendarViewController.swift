@@ -11,10 +11,10 @@ import UIKit
 class CalendarViewController: UIViewController
 {
     
-  
-    @IBOutlet weak var scrollView: UIScrollView!
-    
     @IBOutlet weak var viewScroll: UIView!
+    
+ 
+    @IBOutlet weak var scrollView: UIScrollView!
     
     override func viewDidLoad()
     {
@@ -131,7 +131,7 @@ class CalendarViewController: UIViewController
         self.addChildViewController(vc10)
         self.scrollView.addSubview(vc10.view)
         vc10.didMoveToParentViewController(self)
-
+        
         let vc11 = ViewController11(nibName: "ViewController11", bundle:nil)
         
         var frame11 = vc11.view.frame
@@ -155,12 +155,12 @@ class CalendarViewController: UIViewController
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     func viewForZoomingInScrollView(viewScroll: UIView) -> UIView?
     {
         return self.viewScroll
-   }
-
+    }
+    
 }
 
 

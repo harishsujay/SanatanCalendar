@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Mhu-Qf-MN8">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -7,152 +7,6 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController title="Home" id="BYZ-38-t0r" customClass="ViewController" customModule="SanatanHinduCalendar" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="t1o-UU-kFh">
-                                <rect key="frame" x="20" y="20" width="560" height="580"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Sanatan Almanac 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIt-ho-wip">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
-                                        <accessibility key="accessibilityConfiguration" identifier="sanatanalmanac2016"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="CrD-dT-rsw"/>
-                                            <constraint firstAttribute="width" constant="400" id="a9f-Lb-ufS"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
-                                        <color key="textColor" red="0.10980392156862745" green="0.20392156862745098" blue="0.51764705882352946" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="a9f-Lb-ufS"/>
-                                            </mask>
-                                        </variation>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="tFJ-Ea-yj3">
-                                        <rect key="frame" x="0.0" y="102.5" width="560" height="111"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gsw-3H-lHv">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="111"/>
-                                                <accessibility key="accessibilityConfiguration" identifier="calendar"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="6gz-Hj-Kt1"/>
-                                                    <constraint firstAttribute="height" constant="111" id="QKa-ii-qNt"/>
-                                                </constraints>
-                                                <state key="normal" image="calendar"/>
-                                                <connections>
-                                                    <segue destination="7mb-29-CMY" kind="show" id="PV7-dU-wJM"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKf-TT-6TN">
-                                                <rect key="frame" x="410" y="0.0" width="150" height="111"/>
-                                                <accessibility key="accessibilityConfiguration" identifier="muhurt"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="VJk-ye-8Ee"/>
-                                                    <constraint firstAttribute="height" constant="111" id="jPO-mz-yLQ"/>
-                                                </constraints>
-                                                <state key="normal" image="muhurt"/>
-                                                <connections>
-                                                    <segue destination="hzi-2d-IZe" kind="show" id="o7e-iA-vxu"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="uf0-dg-VWL">
-                                        <rect key="frame" x="0.0" y="285.5" width="560" height="111"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qa0-dt-LQa">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="111"/>
-                                                <accessibility key="accessibilityConfiguration" identifier="glimpseofhindutva"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="111" id="9lS-Wf-nhN"/>
-                                                    <constraint firstAttribute="width" constant="150" id="hK4-iz-KKj"/>
-                                                </constraints>
-                                                <state key="normal" image="glimpseofhindutva"/>
-                                                <connections>
-                                                    <segue destination="7mb-29-CMY" kind="show" id="TrN-M4-KNz"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6m-KO-q0i">
-                                                <rect key="frame" x="410" y="0.0" width="150" height="111"/>
-                                                <accessibility key="accessibilityConfiguration" identifier="holyfestivals"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="111" id="DFz-Lf-iRo"/>
-                                                    <constraint firstAttribute="width" constant="150" id="PeP-ci-Fjt"/>
-                                                </constraints>
-                                                <state key="normal" image="holyfestivals"/>
-                                                <connections>
-                                                    <segue destination="S9m-4Y-i0f" kind="show" id="uFQ-lw-i7N"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Hwi-xK-Qln">
-                                        <rect key="frame" x="0.0" y="469" width="560" height="111"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztn-fQ-Hnj">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="111"/>
-                                                <accessibility key="accessibilityConfiguration" identifier="sadhana"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="111" id="SIT-zQ-Juv"/>
-                                                    <constraint firstAttribute="width" constant="150" id="fwd-ba-mvo"/>
-                                                </constraints>
-                                                <state key="normal" image="sadhana"/>
-                                                <connections>
-                                                    <segue destination="1o7-56-kZD" kind="show" id="FKe-1R-12B"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEQ-8i-vV1">
-                                                <rect key="frame" x="410" y="0.0" width="150" height="111"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="5Qf-GY-nNI"/>
-                                                    <constraint firstAttribute="height" constant="111" id="RPE-Ea-jy8"/>
-                                                </constraints>
-                                                <state key="normal" image="idealroutine"/>
-                                                <connections>
-                                                    <segue destination="7mb-29-CMY" kind="show" id="ueA-5q-X4i"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.88866503917530493" green="0.95551525790838776" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" red="0.70749525787665712" green="0.82436370731014808" blue="1" alpha="0.93201462765957444" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="t1o-UU-kFh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="EDc-hC-EdS"/>
-                            <constraint firstItem="t1o-UU-kFh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="FaD-kW-gV3"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="t1o-UU-kFh" secondAttribute="bottom" id="IZN-jE-SKN"/>
-                            <constraint firstItem="t1o-UU-kFh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="hlg-8B-dT2"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="t1o-UU-kFh" secondAttribute="trailing" id="k6m-vG-VHP"/>
-                            <constraint firstItem="t1o-UU-kFh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="m0I-xb-8Xi"/>
-                            <constraint firstItem="t1o-UU-kFh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="t4z-4q-TB1"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="t1o-UU-kFh" secondAttribute="bottom" id="uge-jH-xxm"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="hlg-8B-dT2"/>
-                                <exclude reference="m0I-xb-8Xi"/>
-                                <exclude reference="t4z-4q-TB1"/>
-                                <exclude reference="uge-jH-xxm"/>
-                            </mask>
-                        </variation>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-851" y="-2137"/>
-        </scene>
         <!--Coming Soon-->
         <scene sceneID="FX1-XF-ao4">
             <objects>
@@ -180,7 +34,7 @@
                                     <color key="titleColor" red="0.08235294118" green="0.13725490200000001" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Boh-iU-EOI"/>
+                                    <segue destination="Mhu-Qf-MN8" kind="show" id="bXA-in-P3U"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckb-LE-F9f">
@@ -259,7 +113,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Wq-SL-b3k">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Wq-SL-b3k">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </mapView>
                         </subviews>
@@ -284,7 +138,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FPl-vq-MQz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-956" y="-1296"/>
+            <point key="canvasLocation" x="-2624" y="-3784"/>
         </scene>
         <!--Sadhana-->
         <scene sceneID="thE-cj-r7o">
@@ -307,7 +161,7 @@
                                     <color key="titleColor" red="0.08235294118" green="0.13725490200000001" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Ero-ld-gFx"/>
+                                    <segue destination="Mhu-Qf-MN8" kind="show" id="hyV-tG-X98"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ap6-ut-u1j">
@@ -356,7 +210,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgk-hQ-Uwn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-39" y="-1296"/>
+            <point key="canvasLocation" x="-1019" y="-1184"/>
         </scene>
         <!--How to be happy-->
         <scene sceneID="jtY-6m-gLV">
@@ -423,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Seg-3P-NzD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="897" y="-1290"/>
+            <point key="canvasLocation" x="85" y="-1184"/>
         </scene>
         <!--Festivals-->
         <scene sceneID="Yda-0t-iL1">
@@ -503,7 +357,7 @@
                                     <color key="titleColor" red="0.082352941176470587" green="0.13725490196078433" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="gU9-YQ-kL0"/>
+                                    <segue destination="Mhu-Qf-MN8" kind="show" id="afW-z5-KLI"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmG-wz-DTr">
@@ -578,7 +432,7 @@ Pronunciation 'Hanumān Jayantī'</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dy2-iM-FCf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-851" y="-3044"/>
+            <point key="canvasLocation" x="-1019" y="-3044"/>
         </scene>
         <!--Ramnavmi-->
         <scene sceneID="JeE-sI-n83">
@@ -664,7 +518,7 @@ Pronunciation 'Hanumān Jayantī'</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uQF-gi-1e9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="79" y="-3044"/>
+            <point key="canvasLocation" x="85" y="-3044"/>
         </scene>
         <!--Event view-->
         <scene sceneID="0HV-Xf-48v">
@@ -678,31 +532,31 @@ Pronunciation 'Hanumān Jayantī'</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="33A-kJ-MXS">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="33A-kJ-MXS">
                                 <rect key="frame" x="20" y="78" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Place" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x7e-5k-V8q" userLabel="Place">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Place" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x7e-5k-V8q" userLabel="Place">
                                 <rect key="frame" x="20" y="116" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2d-Wu-lps">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2d-Wu-lps">
                                 <rect key="frame" x="20" y="192" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="save:" destination="6J0-dF-zTY" eventType="touchUpInside" id="rCl-2k-sBj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgq-p8-XRq">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgq-p8-XRq">
                                 <rect key="frame" x="134" y="192" width="79" height="30"/>
                                 <state key="normal" title="Open Maps"/>
                                 <connections>
                                     <segue destination="4Sx-6d-1MO" kind="show" id="gky-DH-iwL"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mtd-19-Wtu">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mtd-19-Wtu">
                                 <rect key="frame" x="20" y="154" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -733,7 +587,153 @@ Pronunciation 'Hanumān Jayantī'</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LiQ-SS-gQ1" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1588" y="-3044"/>
+            <point key="canvasLocation" x="-1816" y="-3044"/>
+        </scene>
+        <!--Home Scene Auto Layout-->
+        <scene sceneID="SDw-El-yoi">
+            <objects>
+                <viewController id="Mhu-Qf-MN8" userLabel="Home Scene Auto Layout" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bwq-gi-D6v"/>
+                        <viewControllerLayoutGuide type="bottom" id="gi6-vj-1rX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CdV-Zb-DFD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIm-B1-2PJ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BmM-Di-3pV">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4g-9Z-P8g" userLabel="calendar">
+                                                <rect key="frame" x="10" y="124" width="150" height="111"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="calendar"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="111" id="3gm-IH-ebi"/>
+                                                    <constraint firstAttribute="width" constant="150" id="Heq-PE-uQR"/>
+                                                </constraints>
+                                                <state key="normal" image="calendar"/>
+                                                <connections>
+                                                    <segue destination="SZ2-ic-dFN" kind="show" id="jeX-NE-vbm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvQ-Rf-RgJ" userLabel="muhurt">
+                                                <rect key="frame" x="440" y="124" width="150" height="111"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="calendar"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="111" id="UbW-9l-7Nl"/>
+                                                    <constraint firstAttribute="width" constant="150" id="WX8-4l-saA"/>
+                                                </constraints>
+                                                <state key="normal" image="muhurt"/>
+                                                <connections>
+                                                    <segue destination="hzi-2d-IZe" kind="show" id="AUg-wC-o5u"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rG5-6s-UeG" userLabel="holy festivals">
+                                                <rect key="frame" x="10" y="285" width="150" height="111"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="holyfestivals"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="9mI-7r-2S4"/>
+                                                    <constraint firstAttribute="height" constant="111" id="ZzG-3K-JqM"/>
+                                                </constraints>
+                                                <state key="normal" image="holyfestivals"/>
+                                                <connections>
+                                                    <segue destination="S9m-4Y-i0f" kind="show" id="Imm-H2-xIB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDn-Mc-oEs" userLabel="glimpse of hindutva">
+                                                <rect key="frame" x="440" y="285" width="150" height="111"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="holyfestivals"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="BNv-uv-yVp"/>
+                                                    <constraint firstAttribute="height" constant="111" id="LAf-nU-XGT"/>
+                                                </constraints>
+                                                <state key="normal" image="glimpseofhindutva"/>
+                                                <connections>
+                                                    <segue destination="7mb-29-CMY" kind="show" id="RZs-z8-xdf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEA-Xu-b3h" userLabel="holy festivals">
+                                                <rect key="frame" x="10" y="446" width="150" height="111"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="holyfestivals"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="cVb-TQ-QNB"/>
+                                                    <constraint firstAttribute="height" constant="111" id="pNn-Iw-POA"/>
+                                                </constraints>
+                                                <state key="normal" image="sadhana"/>
+                                                <connections>
+                                                    <segue destination="1o7-56-kZD" kind="show" id="Ep4-1I-5Mc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spo-S3-fvd" userLabel="glimpse of hindutva">
+                                                <rect key="frame" x="440" y="446" width="150" height="111"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="holyfestivals"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="d9O-Hu-oZl"/>
+                                                    <constraint firstAttribute="height" constant="111" id="nhR-7Q-4AP"/>
+                                                </constraints>
+                                                <state key="normal" image="idealroutine"/>
+                                                <connections>
+                                                    <segue destination="7mb-29-CMY" kind="show" id="ZdC-6L-QCN"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sanatan Almanac 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsk-Dc-y0w">
+                                                <rect key="frame" x="189" y="40" width="222" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="textColor" red="0.10980392160000001" green="0.20392156859999999" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.83137254900000002" green="0.93333333330000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="yEA-Xu-b3h" firstAttribute="top" secondItem="rG5-6s-UeG" secondAttribute="bottom" constant="50" id="3UD-ah-zIT"/>
+                                            <constraint firstItem="rG5-6s-UeG" firstAttribute="top" secondItem="g4g-9Z-P8g" secondAttribute="bottom" constant="50" id="7me-YQ-e1f"/>
+                                            <constraint firstItem="g4g-9Z-P8g" firstAttribute="top" secondItem="fsk-Dc-y0w" secondAttribute="bottom" constant="60" id="9YO-aB-lIe"/>
+                                            <constraint firstAttribute="trailing" secondItem="qvQ-Rf-RgJ" secondAttribute="trailing" constant="10" id="Ho2-f9-8el"/>
+                                            <constraint firstAttribute="trailing" secondItem="spo-S3-fvd" secondAttribute="trailing" constant="10" id="O3v-s0-b1D"/>
+                                            <constraint firstItem="yEA-Xu-b3h" firstAttribute="leading" secondItem="BmM-Di-3pV" secondAttribute="leading" constant="10" id="OT1-ov-Lil"/>
+                                            <constraint firstItem="fsk-Dc-y0w" firstAttribute="centerX" secondItem="BmM-Di-3pV" secondAttribute="centerX" id="SDf-Ig-yye"/>
+                                            <constraint firstItem="spo-S3-fvd" firstAttribute="top" secondItem="eDn-Mc-oEs" secondAttribute="bottom" constant="50" id="Vlh-gg-H3X"/>
+                                            <constraint firstItem="g4g-9Z-P8g" firstAttribute="leading" secondItem="BmM-Di-3pV" secondAttribute="leading" constant="10" id="XBF-F0-y3j"/>
+                                            <constraint firstItem="eDn-Mc-oEs" firstAttribute="top" secondItem="qvQ-Rf-RgJ" secondAttribute="bottom" constant="50" id="Xrt-ng-O0B"/>
+                                            <constraint firstAttribute="trailing" secondItem="eDn-Mc-oEs" secondAttribute="trailing" constant="10" id="Y0Q-7E-1ER"/>
+                                            <constraint firstItem="fsk-Dc-y0w" firstAttribute="top" secondItem="BmM-Di-3pV" secondAttribute="top" constant="40" id="czc-Fd-oB6"/>
+                                            <constraint firstAttribute="height" constant="600" id="gYr-fT-6vi"/>
+                                            <constraint firstItem="rG5-6s-UeG" firstAttribute="leading" secondItem="BmM-Di-3pV" secondAttribute="leading" constant="10" id="s1Y-nf-1nk"/>
+                                            <constraint firstItem="qvQ-Rf-RgJ" firstAttribute="top" secondItem="fsk-Dc-y0w" secondAttribute="bottom" constant="60" id="t10-G5-U8l"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.83137254900000002" green="0.93333333330000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="BmM-Di-3pV" firstAttribute="width" secondItem="yIm-B1-2PJ" secondAttribute="width" id="RGH-ME-98O"/>
+                                    <constraint firstItem="BmM-Di-3pV" firstAttribute="top" secondItem="yIm-B1-2PJ" secondAttribute="top" id="WSL-i0-OTC"/>
+                                    <constraint firstAttribute="trailing" secondItem="BmM-Di-3pV" secondAttribute="trailing" id="YTG-v0-Aoc"/>
+                                    <constraint firstAttribute="trailing" secondItem="BmM-Di-3pV" secondAttribute="trailing" id="jg0-sM-4iZ"/>
+                                    <constraint firstItem="BmM-Di-3pV" firstAttribute="leading" secondItem="yIm-B1-2PJ" secondAttribute="leading" id="mQ9-Bs-7R9"/>
+                                    <constraint firstAttribute="bottom" secondItem="BmM-Di-3pV" secondAttribute="bottom" id="v3z-qQ-DCr"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="jg0-sM-4iZ"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83137254900000002" green="0.93333333330000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="yIm-B1-2PJ" secondAttribute="trailing" id="HVJ-o9-Eo4"/>
+                            <constraint firstItem="yIm-B1-2PJ" firstAttribute="top" secondItem="CdV-Zb-DFD" secondAttribute="top" id="Owl-oi-rfX"/>
+                            <constraint firstItem="gi6-vj-1rX" firstAttribute="top" secondItem="yIm-B1-2PJ" secondAttribute="bottom" id="VlL-SV-2V9"/>
+                            <constraint firstItem="yIm-B1-2PJ" firstAttribute="leading" secondItem="CdV-Zb-DFD" secondAttribute="leading" id="mHY-0p-FXZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BEw-f2-N9Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1019" y="-2137"/>
         </scene>
         <!--Events-->
         <scene sceneID="8Gg-nm-MPQ">
@@ -755,14 +755,14 @@ Pronunciation 'Hanumān Jayantī'</string>
                                             <rect key="frame" x="15" y="6" width="31.5" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GcH-FM-V1L">
                                             <rect key="frame" x="15" y="25.5" width="40.5" height="13.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -777,7 +777,7 @@ Pronunciation 'Hanumān Jayantī'</string>
                     <navigationItem key="navigationItem" title="Events" id="bfE-aJ-jTs">
                         <barButtonItem key="leftBarButtonItem" title="Home" id="fPt-zY-vtN">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="0xH-Bq-hZm"/>
+                                <segue destination="Mhu-Qf-MN8" kind="show" id="xSC-ez-8rU"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="iLz-S7-pQO">
@@ -789,7 +789,7 @@ Pronunciation 'Hanumān Jayantī'</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kmP-BG-feK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2294" y="-3044"/>
+            <point key="canvasLocation" x="-2590" y="-3044"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HlX-tQ-Ynb">
@@ -805,7 +805,67 @@ Pronunciation 'Hanumān Jayantī'</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cQA-BN-Au8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2052" y="-2119"/>
+            <point key="canvasLocation" x="-2590" y="-2137"/>
+        </scene>
+        <!--Calendar View Controller-->
+        <scene sceneID="sjC-oT-1gq">
+            <objects>
+                <viewController id="SZ2-ic-dFN" customClass="CalendarViewController" customModule="SanatanHinduCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fk9-u7-Mqe"/>
+                        <viewControllerLayoutGuide type="bottom" id="v2B-X5-0hr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6wy-7w-RqD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f5C-1W-TO5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="549"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZN7-4g-fky">
+                                        <rect key="frame" x="0.0" y="0.0" width="605" height="561"/>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ZN7-4g-fky" firstAttribute="leading" secondItem="f5C-1W-TO5" secondAttribute="leadingMargin" constant="-8" id="NfF-NV-ngM"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="ZN7-4g-fky" secondAttribute="bottom" constant="-20" id="Ujx-3J-gUg"/>
+                                    <constraint firstItem="ZN7-4g-fky" firstAttribute="top" secondItem="f5C-1W-TO5" secondAttribute="topMargin" constant="-8" id="iXu-Kc-kOM"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="ZN7-4g-fky" secondAttribute="trailing" constant="-13" id="xfW-fl-2sW"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAb-fe-WOn">
+                                <rect key="frame" x="20" y="570" width="560" height="30"/>
+                                <color key="backgroundColor" red="0.76312921869999994" green="0.87515274570000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="home_sadhana"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.08235294118" green="0.13725490200000001" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Mhu-Qf-MN8" kind="show" id="FdC-LQ-Tps"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83137254900000002" green="0.93333333330000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="f5C-1W-TO5" firstAttribute="top" secondItem="6wy-7w-RqD" secondAttribute="top" id="JMM-hq-YH0"/>
+                            <constraint firstItem="v2B-X5-0hr" firstAttribute="top" secondItem="f5C-1W-TO5" secondAttribute="bottom" constant="51" id="ND6-jz-wXF"/>
+                            <constraint firstItem="BAb-fe-WOn" firstAttribute="leading" secondItem="6wy-7w-RqD" secondAttribute="leading" constant="20" id="RgK-XE-MAI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f5C-1W-TO5" secondAttribute="trailing" constant="-20" id="Rqt-Sx-Fym"/>
+                            <constraint firstAttribute="trailing" secondItem="BAb-fe-WOn" secondAttribute="trailing" constant="20" id="Uwu-pZ-ByO"/>
+                            <constraint firstItem="f5C-1W-TO5" firstAttribute="leading" secondItem="6wy-7w-RqD" secondAttribute="leadingMargin" constant="-20" id="jf3-WO-F5Y"/>
+                            <constraint firstItem="v2B-X5-0hr" firstAttribute="top" secondItem="BAb-fe-WOn" secondAttribute="bottom" id="pa5-9b-sJy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="ZN7-4g-fky" id="Qd8-tg-2P4"/>
+                        <outlet property="viewScroll" destination="f5C-1W-TO5" id="4F4-U4-kbS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tu6-VU-S0h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2253" y="-1364"/>
         </scene>
         <!--Maps Navigation Controller-->
         <scene sceneID="OWr-y7-5y4">
@@ -823,7 +883,7 @@ Pronunciation 'Hanumān Jayantī'</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H7i-8Z-vDM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1786" y="-1296"/>
+            <point key="canvasLocation" x="-1822" y="-3784"/>
         </scene>
     </scenes>
     <resources>
@@ -839,10 +899,10 @@ Pronunciation 'Hanumān Jayantī'</string>
         <image name="whyareweborn-cropped" width="646" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ero-ld-gFx"/>
-        <segue reference="FKe-1R-12B"/>
-        <segue reference="vvy-s3-hyS"/>
-        <segue reference="uFQ-lw-i7N"/>
-        <segue reference="lIR-nv-BNe"/>
+        <segue reference="Ep4-1I-5Mc"/>
+        <segue reference="FdC-LQ-Tps"/>
+        <segue reference="ZdC-6L-QCN"/>
+        <segue reference="Imm-H2-xIB"/>
+        <segue reference="GNb-oJ-sx7"/>
     </inferredMetricsTieBreakers>
 </document>

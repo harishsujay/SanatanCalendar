@@ -15,18 +15,18 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jun" translatesAutoresizingMaskIntoConstraints="NO" id="B0t-FF-4KT">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jun" translatesAutoresizingMaskIntoConstraints="NO" id="4xs-wy-ZNB">
                     <rect key="frame" x="10" y="20" width="355" height="575"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="355" id="0KY-Jq-6ED"/>
-                        <constraint firstAttribute="height" constant="575" id="Oup-Jf-HdU"/>
+                        <constraint firstAttribute="height" constant="575" id="7pi-id-Nlp"/>
+                        <constraint firstAttribute="width" constant="355" id="TJS-jf-vVc"/>
                     </constraints>
                 </imageView>
             </subviews>
-            <color key="backgroundColor" red="0.83529411760000005" green="0.92941176469999998" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.83137254900000002" green="0.93333333330000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="B0t-FF-4KT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="Z2O-AY-FTx"/>
-                <constraint firstItem="B0t-FF-4KT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="rew-Dq-JaC"/>
+                <constraint firstItem="4xs-wy-ZNB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="BqZ-3d-iQo"/>
+                <constraint firstItem="4xs-wy-ZNB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="cI1-dE-JXR"/>
             </constraints>
         </view>
     </objects>

@@ -2,7 +2,7 @@
 //  ViewController0.swift
 //  SanatanHinduCalendar
 //
-//  Created by Sujay Sudhir Borde on 20/05/2016.
+//  Created by Sujay Sudhir Borde on 22/05/2016.
 //  Copyright © 2016 RMIT. All rights reserved.
 //
 
@@ -10,15 +10,10 @@ import UIKit
 
 class ViewController0: UIViewController {
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
