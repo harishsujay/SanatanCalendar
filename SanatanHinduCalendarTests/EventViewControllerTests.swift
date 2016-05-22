@@ -93,8 +93,29 @@ class EventViewControllerTests: XCTestCase {
             print("\n\n Could not fetch \(error), \(error.userInfo) \n\n")
         }
         
-        
+    }
     
+    func testUpdatingEventInCoreData() {
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext: NSManagedObjectContext = appDelegate.managedObjectContext
+        
+        do {
+            let fetchRequest = NSFetchRequest(entityName:"Event")
+            
+            let results = try managedContext.executeFetchRequest(fetchRequest)
+            
+            events = results as! [Event]
+            
+            let event = events[0] as NSManagedObject
+            
+            event.setValue("Ramnavmi", forKey: "name")
+            
+            try event.managedObjectContext?.save()
+            print("\n\n The events data has been updated into the Core Data successfully \n\n")
+        } catch let error as NSError{
+            print("\n\n Could not update \(error), \(error.userInfo) \n\n")
+        }
     }
     
     func testDeleteEventFromCoreData() {
@@ -112,13 +133,5 @@ class EventViewControllerTests: XCTestCase {
             print("\n\n Could not delete \(error), \(error.userInfo) \n\n")
         }
     }
-    /*
-    func testLabelValuesDisplayedProperly() {
-        vc.updateLabels(Float(80.0), Float(50.0), Float(40.0))
-        
-        // The labels should now display 80, 50 and 40
-        XCTAssert(vc.numberLabel.text == "80.0", "numberLabel doesn't show the right text")
-        XCTAssert(vc.percentageLabel.text == "50.0%", "percentageLabel doesn't show the right text")
-        XCTAssert(vc.resultLabel.text == "40.0", "resultLabel doesn't show the right text")
-    }*/
+    
 }
