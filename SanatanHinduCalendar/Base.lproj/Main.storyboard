@@ -323,7 +323,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAM-k0-tM1">
-                                <rect key="frame" x="20" y="70" width="100" height="110"/>
+                                <rect key="frame" x="20" y="70" width="105" height="125"/>
                                 <accessibility key="accessibilityConfiguration" identifier="ramnavami"/>
                                 <state key="normal" image="ramnavmi"/>
                                 <connections>
@@ -411,10 +411,10 @@ Pronunciation 'Hanumān Jayantī'</string>
                             <constraint firstItem="0Cv-GN-SPO" firstAttribute="top" secondItem="T5t-XB-J7u" secondAttribute="top" constant="230" id="eJK-KE-p9a"/>
                             <constraint firstAttribute="leadingMargin" secondItem="WAM-k0-tM1" secondAttribute="leading" id="fXZ-WS-tHb"/>
                             <constraint firstItem="RMA-6z-UWI" firstAttribute="top" secondItem="TgJ-tr-3k6" secondAttribute="bottom" constant="43" id="gTS-au-6Cs"/>
-                            <constraint firstItem="dMZ-S4-BTo" firstAttribute="leading" secondItem="WAM-k0-tM1" secondAttribute="trailing" constant="31" id="gas-HT-a0b"/>
+                            <constraint firstItem="dMZ-S4-BTo" firstAttribute="leading" secondItem="WAM-k0-tM1" secondAttribute="trailing" constant="26" id="gas-HT-a0b"/>
                             <constraint firstItem="0Cv-GN-SPO" firstAttribute="leading" secondItem="WAM-k0-tM1" secondAttribute="leading" id="kyT-ma-J5g"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pmG-wz-DTr" secondAttribute="trailing" constant="10" id="lDu-nG-dLS"/>
-                            <constraint firstItem="0Cv-GN-SPO" firstAttribute="top" secondItem="WAM-k0-tM1" secondAttribute="bottom" constant="50" id="lKb-Dc-Ocb"/>
+                            <constraint firstItem="0Cv-GN-SPO" firstAttribute="top" secondItem="WAM-k0-tM1" secondAttribute="bottom" constant="35" id="lKb-Dc-Ocb"/>
                             <constraint firstItem="0Cv-GN-SPO" firstAttribute="leading" secondItem="H0S-FP-Aap" secondAttribute="leading" id="qBn-Gj-lG7"/>
                             <constraint firstItem="TgJ-tr-3k6" firstAttribute="top" secondItem="dMZ-S4-BTo" secondAttribute="bottom" constant="8" symbolic="YES" id="sBc-Xl-Ack"/>
                             <constraint firstItem="AXd-U8-Jta" firstAttribute="leading" secondItem="T5t-XB-J7u" secondAttribute="leading" id="tUH-np-9BO"/>
@@ -543,15 +543,21 @@ Pronunciation 'Hanumān Jayantī'</string>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2d-Wu-lps">
-                                <rect key="frame" x="20" y="192" width="34" height="30"/>
-                                <state key="normal" title="Save"/>
+                                <rect key="frame" x="20" y="192" width="36" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.10980392160000001" green="0.20392156859999999" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="save:" destination="6J0-dF-zTY" eventType="touchUpInside" id="rCl-2k-sBj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgq-p8-XRq">
-                                <rect key="frame" x="134" y="192" width="79" height="30"/>
-                                <state key="normal" title="Open Maps"/>
+                                <rect key="frame" x="136" y="192" width="83" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Open Maps">
+                                    <color key="titleColor" red="0.10980392160000001" green="0.20392156859999999" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="4Sx-6d-1MO" kind="show" id="gky-DH-iwL"/>
                                 </connections>
@@ -562,7 +568,7 @@ Pronunciation 'Hanumān Jayantī'</string>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.83137254900000002" green="0.93333333330000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="33A-kJ-MXS" secondAttribute="leading" id="0VG-QE-Ni9"/>
                             <constraint firstAttribute="leadingMargin" secondItem="V2d-Wu-lps" secondAttribute="leading" id="10x-WV-38F"/>
@@ -899,9 +905,9 @@ Pronunciation 'Hanumān Jayantī'</string>
         <image name="whyareweborn-cropped" width="646" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ep4-1I-5Mc"/>
-        <segue reference="afW-z5-KLI"/>
         <segue reference="Imm-H2-xIB"/>
+        <segue reference="afW-z5-KLI"/>
+        <segue reference="Ep4-1I-5Mc"/>
         <segue reference="7LL-5h-qma"/>
     </inferredMetricsTieBreakers>
 </document>

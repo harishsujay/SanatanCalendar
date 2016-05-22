@@ -9,6 +9,16 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>SanatanNotificationShareExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>SanatanNotificationTodayExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +33,11 @@
 			<true/>
 		</dict>
 		<key>412C90D81CBA4D7700B6E8AA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BA3F226F1CF1BFF20011729F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
